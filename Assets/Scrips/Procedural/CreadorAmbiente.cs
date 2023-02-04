@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class CreadorAmbiente : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class CreadorAmbiente : MonoBehaviour
 	public float	tamaño;
 	[Range(0,20)]
 	public float	sensibilidad;
+	public int		radioCaminos;
+
+	public MeshRenderer mallaPiso;
+	private MeshFilter malla;
+	public float altura;
+	public Vector3[] posiciones;
+	public float tamañoTerreno = 50;
 
     public Texture2D    imagenBase;
     public RawImage     rawImage;
@@ -25,6 +33,7 @@ public class CreadorAmbiente : MonoBehaviour
 	private void Awake()
 	{
 		singleton = this;
+		malla = mallaPiso.GetComponent<MeshFilter>();
 	}
 
 	void Start()
@@ -32,6 +41,7 @@ public class CreadorAmbiente : MonoBehaviour
         imagenBase = new Texture2D(alto, ancho);
         GenerarMapa();
         rawImage.texture = imagenBase;
+
 		
     }
 
@@ -58,12 +68,12 @@ public class CreadorAmbiente : MonoBehaviour
 		}
 
 		////// Creo mis islas desconectadas
+		Color c = new Color(0,0,0,1);
 		for (int i = 0; i < nodos; i++)
 		{
 			float rad = Random.Range(radios.x, radios.y);
             Vector2 centro = new Vector2(Mathf.Round(Random.Range(rad, alto - rad)), Mathf.Round(Random.Range(rad, ancho - rad)));
 			listaCentros.Add(centro);
-			Color c = new Color(0,0,0,1);
 			for (int x = 0; x < alto; x++)
 			{
 				for (int y = 0; y < ancho; y++)
@@ -90,11 +100,96 @@ public class CreadorAmbiente : MonoBehaviour
 			}
 		}
 
+		float m;
+		float b;
 		for (int i = 1; i < listaCentros.Count; i++)
 		{
-			print(Vector2.Distance(listaCentros[0], listaCentros[i]));
+			//print(Vector2.Distance(listaCentros[0], listaCentros[i]));
+			m = (listaCentros[i].y - listaCentros[i - 1].y) / (listaCentros[i].x - listaCentros[i - 1].x);
+			b = listaCentros[i].y - m * listaCentros[i].x;
+
+			for (int j = 0; j < Mathf.Abs(listaCentros[i].x -  listaCentros[i-1].x); j++)
+			{
+				int nx = (int)((listaCentros[i].x < listaCentros[i-1].x)?listaCentros[i].x:listaCentros[i-1].x ) + j;
+				int ny = (int)(m * nx + b);
+				Dibujarcirculo(radioCaminos, nx, ny, c);
+			}
 		}
 
-        imagenBase.Apply();
+		////// Detectar Bordes
+		for (int i = 1; i < ancho; i++)
+		{
+			for (int j = 1; j < alto; j++)
+			{
+				Color c1 = imagenBase.GetPixel(i, j+1);
+				Color c2 = imagenBase.GetPixel(i, j);
+				Color c3 = imagenBase.GetPixel(i, j-1);
+
+				Color c4 = imagenBase.GetPixel(i-1, j);
+				Color c5 = imagenBase.GetPixel(i+1, j);
+
+
+				if (c2 == Color.black && (c3 == Color.red || c1 == Color.red))
+				{
+					imagenBase.SetPixel(i, j, Color.green);
+				}
+				if (c2 == Color.black && (c4 == Color.red || c5 == Color.red))
+				{
+					imagenBase.SetPixel(i, j, Color.green);
+				}
+
+			}
+		}
+
+		////// Aplico los cambios en la imagen
+		imagenBase.Apply();
+		mallaPiso.material.SetTexture("_BaseMap", imagenBase);
+		CambiarMalla();
+	}
+
+	public void Dibujarcirculo(int r, int x, int y, Color c)
+	{
+		Vector2 p1, p2;
+		for (int i = -r; i < r; i++)
+		{
+			for (int j = -r; j < r; j++)
+			{
+				p1 = new Vector2(x, y);
+				p2 = new Vector2(x + i, y + j);
+				if (Vector2.Distance(p1,p2)<=r)
+				{
+					imagenBase.SetPixel(x + i, y + j, c);
+				}
+			}
+		}
+	}
+
+	public void CambiarMalla()
+	{
+		posiciones = malla.mesh.vertices;
+		float nx, nz;
+		float minimo = 10000;
+		float maximo = -10000;
+		for (int i = 0; i < posiciones.Length; i++)
+		{
+			if (posiciones[i].x < minimo)
+			{
+				minimo = posiciones[i].x;
+			}
+			else if (posiciones[i].x > maximo)
+			{
+				maximo = posiciones[i].x;
+			}
+			int ix = ancho-(int)((float)(posiciones[i].x - minimo) / (float)(maximo - minimo)*ancho);
+			int iz = ancho-(int)((float)(posiciones[i].z - minimo) / (float)(maximo - minimo)*ancho);
+			if (ix >= 0)
+			{
+				Color c = imagenBase.GetPixel(ix, iz);
+				posiciones[i].y = c.r * altura;
+			}
+
+		}
+		malla.mesh.SetVertices(posiciones);
+		malla.mesh.RecalculateNormals();
 	}
 }
