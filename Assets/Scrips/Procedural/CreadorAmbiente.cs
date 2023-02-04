@@ -19,6 +19,7 @@ public class CreadorAmbiente : MonoBehaviour
 
 	public MeshRenderer mallaPiso;
 	private MeshFilter malla;
+	private MeshCollider mCollider;
 	public float altura;
 	public Vector3[] posiciones;
 	public float tamañoTerreno = 50;
@@ -34,6 +35,7 @@ public class CreadorAmbiente : MonoBehaviour
 	{
 		singleton = this;
 		malla = mallaPiso.GetComponent<MeshFilter>();
+		mCollider = mallaPiso.GetComponent<MeshCollider>();
 	}
 
 	void Start()
@@ -132,10 +134,20 @@ public class CreadorAmbiente : MonoBehaviour
 				if (c2 == Color.black && (c3 == Color.red || c1 == Color.red))
 				{
 					imagenBase.SetPixel(i, j, Color.green);
+					imagenBase.SetPixel(i, j+1, Color.green);
+					imagenBase.SetPixel(i, j-1, Color.green);
+					imagenBase.SetPixel(i-1, j, Color.green);
+					imagenBase.SetPixel(i-1, j+1, Color.green);
+					imagenBase.SetPixel(i-1, j-1, Color.green);
 				}
 				if (c2 == Color.black && (c4 == Color.red || c5 == Color.red))
 				{
 					imagenBase.SetPixel(i, j, Color.green);
+					imagenBase.SetPixel(i, j + 1, Color.green);
+					imagenBase.SetPixel(i, j - 1, Color.green);
+					imagenBase.SetPixel(i - 1, j, Color.green);
+					imagenBase.SetPixel(i - 1, j + 1, Color.green);
+					imagenBase.SetPixel(i - 1, j - 1, Color.green);
 				}
 
 			}
@@ -191,5 +203,6 @@ public class CreadorAmbiente : MonoBehaviour
 		}
 		malla.mesh.SetVertices(posiciones);
 		malla.mesh.RecalculateNormals();
+		mCollider.sharedMesh = malla.mesh;
 	}
 }
