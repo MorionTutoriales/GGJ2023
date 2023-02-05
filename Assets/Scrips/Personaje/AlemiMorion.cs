@@ -6,8 +6,11 @@ using UnityEngine.Formats.Alembic.Importer;
 public class AlemiMorion : MonoBehaviour
 {
     public float velocidad;
-    int frame;
+    float frame;
     AlembicStreamPlayer alem;
+    public bool loop;
+    public float loopTime;
+
     void Start()
     {
         alem = GetComponent<AlembicStreamPlayer>();
@@ -16,7 +19,11 @@ public class AlemiMorion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        velocidad += Time.deltaTime*velocidad;
-        alem.CurrentTime = velocidad;
+        frame += Time.deltaTime*velocidad;
+        alem.CurrentTime = frame;
+		if (loop && frame > loopTime)
+		{
+            frame = 0;
+		}
     }
 }
