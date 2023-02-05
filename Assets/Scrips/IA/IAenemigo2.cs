@@ -12,6 +12,7 @@ public class IAenemigo2 : MonoBehaviour
     public float amplitud;
     private Vector3 pos;
     public float frecuencia;
+    public GameObject particulas;
 
     private void Start()
     {
@@ -37,6 +38,7 @@ public class IAenemigo2 : MonoBehaviour
             default:
                 break;
         }
+        
     }
 
     void EstadoIdle()
@@ -94,5 +96,16 @@ public class IAenemigo2 : MonoBehaviour
     public void CambiarEstado(Estados nuevoEstado)
     {
         estado = nuevoEstado;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+
+        if (particulas != null)
+        {
+            GameObject effect = Instantiate(particulas);
+            effect.transform.position = transform.position;
+        }
     }
 }
