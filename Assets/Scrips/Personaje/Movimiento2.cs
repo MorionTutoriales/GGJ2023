@@ -45,7 +45,7 @@ public class Movimiento2 : MonoBehaviour
             cargaActual += (velocidadCarga/10f) * Time.deltaTime;
 			if (cargaActual >= 1)
 			{
-                animaciones.SetTrigger("Carga");
+                animaciones.SetTrigger("Carga2");
                 Invoke("DesCargar", 2f);
 			}
 
