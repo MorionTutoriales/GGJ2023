@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Movimiento2 : MonoBehaviour
 {
@@ -35,9 +36,15 @@ public class Movimiento2 : MonoBehaviour
     public int cuantoRecarga = 10;
     public BarraDeVida barraVida;
 
+    public void CargarMenu()
+    {
+        SceneManager.LoadScene("Niveles");
+    }
     public void Morir()
 	{
         print("MUERTO");
+        controlPrincipal.enabled = false;
+        Invoke("CargarMenu", 10);
         animaciones.SetBool("vivo", false);
         enabled = false;
 	}

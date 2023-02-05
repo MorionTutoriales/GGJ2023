@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossFinal : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class BossFinal : MonoBehaviour
 	private void Awake()
 	{
 		singleton = this;
+	}
+
+	public void CargarMenu()
+	{
+		SceneManager.LoadScene("Niveles");
 	}
 
 	// Start is called before the first frame update
@@ -75,6 +81,7 @@ public class BossFinal : MonoBehaviour
 		animaciones.SetBool("vivo", false);
 		//Destroy(gameObject.GetComponent<Collider>());
 		Destroy(this);
+		Invoke("CargarMenu", 10);
 	}
 
 	private void OnDrawGizmosSelected()

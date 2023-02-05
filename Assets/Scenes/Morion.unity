@@ -208,8 +208,8 @@ MonoBehaviour:
   - {fileID: 689529840}
   - {fileID: 1247145503}
   - {fileID: 1148012167}
-  vidaActual: 0
-  vidaInicial: 5
+  vidaActual: 100
+  vidaInicial: 100
   barraVida: {fileID: 4545708}
 --- !u!114 &4545708
 MonoBehaviour:
@@ -224,8 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barraDeVida: {fileID: 376444391}
-  vidaActual: 5
-  vidaMaxima: 5
+  vidaActual: 100
+  vidaMaxima: 100
   eventoMorir:
     m_PersistentCalls:
       m_Calls: []
