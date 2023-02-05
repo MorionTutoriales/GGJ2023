@@ -76,6 +76,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-7231088557350715647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MX/Muerte
+  m_EditorClassIdentifier: 
+  Name: Muerte
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2242727917
+    data2: 223186877
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-6641412591397627077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,10 +162,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111943662608841
+  lastModified: 638112034775718966
   FileSizes:
   - Name: Desktop
-    Value: 1192
+    Value: 1312
   Exists: 1
 --- !u!114 &-5751193415881056225
 MonoBehaviour:
@@ -240,7 +264,7 @@ MonoBehaviour:
     Data4: -1342512880
   Banks:
   - {fileID: 9190191681223250799}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -346,15 +370,18 @@ MonoBehaviour:
   - {fileID: 8123168013618537845}
   - {fileID: 5821865327851958863}
   - {fileID: -7865918052181460413}
+  - {fileID: 4990461982864628586}
   EditorParameters:
   - {fileID: 2485706844285538112}
   - {fileID: -4744450485221797986}
   - {fileID: 4970358101542138010}
+  - {fileID: 5786595178485026302}
+  - {fileID: 8017858768686954081}
   MasterBanks:
   - {fileID: 9190191681223250799}
   StringsBanks:
   - {fileID: -6147435469291570980}
-  cacheTime: 638111943662691967
+  cacheTime: 638112034775718966
   cacheVersion: 131601
 --- !u!114 &180241468755613959
 MonoBehaviour:
@@ -534,6 +561,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4387
+--- !u!114 &3914331086879559839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MX/Batalla
+  m_EditorClassIdentifier: 
+  Name: Batalla
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 218670206
+    data2: 4142356491
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &4031557292779053579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,6 +685,35 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &4990461982864628586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX
+  m_EditorClassIdentifier: 
+  Path: event:/MX
+  Guid:
+    Data1: 1457931909
+    Data2: 1244904544
+    Data3: -1704814434
+    Data4: 952987775
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7231088557350715647}
+  - {fileID: 3914331086879559839}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 59076
 --- !u!114 &5450247416025260533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,6 +766,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 656
+--- !u!114 &5786595178485026302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Batalla
+  m_EditorClassIdentifier: 
+  Name: Batalla
+  StudioPath: parameter:/Batalla
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 218670206
+    data2: 4142356491
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &5821865327851958863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,6 +846,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 634
+--- !u!114 &8017858768686954081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Muerte
+  m_EditorClassIdentifier: 
+  Name: Muerte
+  StudioPath: parameter:/Muerte
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2242727917
+    data2: 223186877
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &8020344630299804947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,8 +1008,8 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111943662691967
+  lastModified: 638112034775688960
   FileSizes:
   - Name: Desktop
-    Value: 640960
+    Value: 2666496
   Exists: 1
