@@ -1824,6 +1824,16 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: abe228cb190de814592e1209a337ef0e, type: 3}
   - {fileID: 9000775666622429566, guid: c7103f74792928d4283a080a1e269c16, type: 3}
   - {fileID: 9000775666622429566, guid: c7103f74792928d4283a080a1e269c16, type: 3}
+  - {fileID: 919132149155446097, guid: 52243cabceeb3f64d989a392070d4dbb, type: 3}
+  - {fileID: 919132149155446097, guid: fc5312e239a630a4eb4fcd39c0289229, type: 3}
+  - {fileID: 919132149155446097, guid: 52e65d4e7b1b9704dab28d5aa8ce6c8f, type: 3}
+  - {fileID: 919132149155446097, guid: abe228cb190de814592e1209a337ef0e, type: 3}
+  - {fileID: 919132149155446097, guid: 52e65d4e7b1b9704dab28d5aa8ce6c8f, type: 3}
+  - {fileID: 919132149155446097, guid: dfca94c4db147e04189ceb26b3725756, type: 3}
+  - {fileID: 919132149155446097, guid: abe228cb190de814592e1209a337ef0e, type: 3}
+  - {fileID: 919132149155446097, guid: 52e65d4e7b1b9704dab28d5aa8ce6c8f, type: 3}
+  - {fileID: 919132149155446097, guid: dfca94c4db147e04189ceb26b3725756, type: 3}
+  - {fileID: 919132149155446097, guid: abe228cb190de814592e1209a337ef0e, type: 3}
   frecuenciaCosas: 3.6
   escalaCosas: 0.01
   probabilidadAparecer: 0.3
