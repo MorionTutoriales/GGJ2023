@@ -24,6 +24,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-7690341606534539199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Saltar/salto y disparo
+  m_EditorClassIdentifier: 
+  Name: salto y disparo
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 966919438
+    data2: 3010765258
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-6431864960001150652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,10 +63,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111833182141361
+  lastModified: 638111907418559796
   FileSizes:
   - Name: Desktop
-    Value: 1028
+    Value: 1192
   Exists: 1
 --- !u!114 &-5751193415881056225
 MonoBehaviour:
@@ -69,9 +93,58 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: -8977287415550474361}
+  - {fileID: -7690341606534539199}
   MinDistance: 1
   MaxDistance: 20
-  Length: 1440
+  Length: 1300
+--- !u!114 &-4647616713718370243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cosechando
+  m_EditorClassIdentifier: 
+  Name: cosechando
+  StudioPath: parameter:/cosechando
+  Min: 0
+  Max: 1.1
+  Default: 0
+  ID:
+    data1: 1843878816
+    data2: 65142811
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-2651035590714691249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Disparando/salto y disparo
+  m_EditorClassIdentifier: 
+  Name: salto y disparo
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 966919438
+    data2: 3010765258
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-1849916278159367469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,19 +187,22 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 6480111048699023753}
   - {fileID: 3301115940938086839}
-  - {fileID: 2328361601452262788}
   - {fileID: 5485595130974248483}
   - {fileID: 2950474303121890306}
   - {fileID: -5751193415881056225}
+  - {fileID: 4031557292779053579}
+  - {fileID: 180241468755613959}
   EditorParameters:
   - {fileID: -1849916278159367469}
+  - {fileID: 8599437799626646949}
+  - {fileID: -4647616713718370243}
   MasterBanks:
   - {fileID: 8020344630299804947}
   StringsBanks:
   - {fileID: -6431864960001150652}
-  cacheTime: 638111833184301459
+  cacheTime: 638111907418559796
   cacheVersion: 131601
---- !u!114 &2328361601452262788
+--- !u!114 &180241468755613959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,9 +212,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ArracachaMan/Cosechando
+  m_Name: event:/ArracachaMan/cosechando
   m_EditorClassIdentifier: 
-  Path: event:/ArracachaMan/Cosechando
+  Path: event:/ArracachaMan/cosechando
   Guid:
     Data1: -1533598298
     Data2: 1295458467
@@ -176,7 +252,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -2651035590714691249}
   MinDistance: 1
   MaxDistance: 20
   Length: 3187
@@ -207,6 +284,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4387
+--- !u!114 &4031557292779053579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/cargacosechando
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/cargacosechando
+  Guid:
+    Data1: -1589980604
+    Data2: 1309309197
+    Data3: 1508686236
+    Data4: 1327295911
+  Banks:
+  - {fileID: 8020344630299804947}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8996755894698863470}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4220146313440426756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,8 +406,56 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111833184301459
+  lastModified: 638111907418529791
   FileSizes:
   - Name: Desktop
-    Value: 493536
+    Value: 640960
+  Exists: 1
+--- !u!114 &8599437799626646949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/salto y disparo
+  m_EditorClassIdentifier: 
+  Name: salto y disparo
+  StudioPath: parameter:/Salto y disparo
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 966919438
+    data2: 3010765258
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8996755894698863470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cargacosechando/cosechando
+  m_EditorClassIdentifier: 
+  Name: cosechando
+  StudioPath: 
+  Min: 0
+  Max: 1.1
+  Default: 0
+  ID:
+    data1: 1843878816
+    data2: 65142811
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
