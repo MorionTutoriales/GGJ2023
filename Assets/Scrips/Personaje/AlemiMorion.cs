@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Formats.Alembic.Importer;
+using UnityEngine.Events;
 
 public class AlemiMorion : MonoBehaviour
 {
@@ -10,10 +11,12 @@ public class AlemiMorion : MonoBehaviour
     AlembicStreamPlayer alem;
     public bool loop;
     public float loopTime;
+    public UnityEvent eventoInicial;
 
     void Start()
     {
         alem = GetComponent<AlembicStreamPlayer>();
+        eventoInicial.Invoke();
     }
 
     // Update is called once per frame

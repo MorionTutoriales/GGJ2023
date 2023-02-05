@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class Movimiento2 : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class Movimiento2 : MonoBehaviour
     public Transform posDisparo;
     public GameObject particulasDisparo;
     public GameObject bala;
+    public InputActionProperty prSalto;
+    public float ultimoSalto;
+    public UnityEvent eventoSaltar;
 
     Vector3 posAnterior;
     public InputActionProperty prCarga;
@@ -36,10 +40,17 @@ public class Movimiento2 : MonoBehaviour
     {
         prDisparo.action.Enable();
         prCarga.action.Enable();
+        prSalto.action.Enable();
     }
 	private void Update()
 	{
         btnDisparar = prDisparo.action.ReadValue<float>();
+
+		if (prSalto.action.ReadValue<float>() > 0 && Time.time > ultimoSalto)
+		{
+            ultimoSalto = Time.time + 1;
+            eventoSaltar.Invoke();
+        }
 
         if (prDisparo.action.ReadValue<float>() > 0 && Time.time > ultimoDisparo && pCarga<0.1f)
 		{

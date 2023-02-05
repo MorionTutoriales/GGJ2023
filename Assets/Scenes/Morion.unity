@@ -386,6 +386,9 @@ MonoBehaviour:
   velocidad: 1
   loop: 1
   loopTime: 2.4
+  eventoInicial:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +702,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1364993443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5593026410306466254, guid: c2e4cb0de8259f04d88ccba91672b678,
+    type: 3}
+  m_PrefabInstance: {fileID: 4973164769907243196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1364993448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364993443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05187bccd1b532d40a86a3964612cf81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1366823101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1045,6 +1066,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1834060902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8363132761230661913, guid: c2e4cb0de8259f04d88ccba91672b678,
+    type: 3}
+  m_PrefabInstance: {fileID: 4973164769907243196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1834060903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834060902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05187bccd1b532d40a86a3964612cf81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1996676348 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6150366215738392782, guid: c2e4cb0de8259f04d88ccba91672b678,
@@ -1223,6 +1262,46 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4973164770032729874, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoInicial.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973164770032729874, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoInicial.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973164770032729874, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoInicial.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1834060903}
+    - target: {fileID: 4973164770032729874, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoInicial.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973164770032729874, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoInicial.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayEvento
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973164770032729874, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoInicial.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973164770032729874, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoInicial.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: event:/ArracachaMan/Spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973164770032729874, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoInicial.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5081165226511478262, guid: c2e4cb0de8259f04d88ccba91672b678,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1285,6 +1364,67 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8194992990867289339, guid: 99bc28c0d45f51c4fbac01080b73edc7,
         type: 3}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: prSalto.m_Reference
+      value: 
+      objectReference: {fileID: -1916377846673030204, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+        type: 3}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: prSalto.m_Action.m_Id
+      value: c8831b78-586b-406a-9265-fb05fca72316
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: prSalto.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: prSalto.m_Action.m_Name
+      value: Pr Salto
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoSaltar.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoSaltar.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoSaltar.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1364993448}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoSaltar.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoSaltar.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayEvento
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoSaltar.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoSaltar.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: event:/ArracachaMan/Saltar
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593026410306466255, guid: c2e4cb0de8259f04d88ccba91672b678,
+        type: 3}
+      propertyPath: eventoSaltar.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6465300675079935414, guid: c2e4cb0de8259f04d88ccba91672b678,
         type: 3}
       propertyPath: m_Priority
