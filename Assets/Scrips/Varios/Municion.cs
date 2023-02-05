@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Municion : MonoBehaviour
 {
+    public GameObject particulas;
     public static GameObject objetoActivo;
     // Start is called before the first frame update
     void Start()
@@ -11,13 +12,12 @@ public class Municion : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void OnDestroy()
+	{
+        Instantiate(particulas, transform.position, Quaternion.identity);
+	}
 
-    private void OnTriggerEnter(Collider other)
+	private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {

@@ -22,6 +22,7 @@ public class Movimiento2 : MonoBehaviour
     public static Movimiento2 singleton;
     public float velocidadCarga = 0.5f;
     public float cargaActual = 0;
+    float tiempoUltimoTrigger;
 
     void Start()
     {
@@ -42,12 +43,17 @@ public class Movimiento2 : MonoBehaviour
 		{
             pCarga = prCarga.action.ReadValue<float>();
             controlPrincipal.enabled = (!(pCarga > 0));
-            cargaActual += (velocidadCarga/10f) * Time.deltaTime;
+            if ((pCarga > 0)) cargaActual += (velocidadCarga/5f) * Time.deltaTime;
 			if (cargaActual >= 1)
 			{
-                animaciones.SetTrigger("Carga");
-                Invoke("DesCargar", 2f);
-			}
+				if (Time.time > tiempoUltimoTrigger)
+				{
+                    animaciones.SetTrigger("Carga2");
+                    tiempoUltimoTrigger = Time.time + 5;
+                }
+                Invoke("DesCargar", 2);
+
+            }
 
 		}
     }
@@ -55,6 +61,10 @@ public class Movimiento2 : MonoBehaviour
     public void DesCargar()
 	{
         Destroy(Municion.objetoActivo);
+        enZonaMunicion = false;
+        pCarga = 0;
+        cargaActual = 0;
+        controlPrincipal.enabled = true;
 	}
 
 	// Update is called once per frame
