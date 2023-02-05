@@ -5,18 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Scenes/Morion.unity
-    guid: b42f10c446845264c9c65c2b7bf2e3cc
-  - enabled: 1
-    path: Assets/Scenes/Menu y Niveles/Morion2.unity
-    guid: b716de9fac1c4c847bc4063882480814
-  - enabled: 1
-    path: Assets/Scenes/Menu y Niveles/Morion3.unity
-    guid: 339b08aa63570d44f8f9824863f30dc9
   - enabled: 1
     path: Assets/Scenes/Menu y Niveles/Menu.unity
     guid: 8909b5ec989bde143980366bf0a87964
@@ -26,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu y Niveles/Creditos.unity
     guid: 7daf7ad51759b734dbfa55d3ec12d020
+  - enabled: 1
+    path: Assets/Scenes/Morion.unity
+    guid: b42f10c446845264c9c65c2b7bf2e3cc
   m_configObjects: {}
