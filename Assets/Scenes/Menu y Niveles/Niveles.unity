@@ -461,14 +461,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 716450628}
         m_TargetAssemblyTypeName: CambiarNivel, Assembly-CSharp
-        m_MethodName: CambiarEscenastr
+        m_MethodName: CambiarEscena
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Morion3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &203399122
@@ -567,7 +567,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LEVEL 3
+  m_text: hard
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f4f4160273e01da47aa29ac74d36e916, type: 2}
   m_sharedMaterial: {fileID: 1688412892320241161, guid: f4f4160273e01da47aa29ac74d36e916,
@@ -893,14 +893,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 716450628}
         m_TargetAssemblyTypeName: CambiarNivel, Assembly-CSharp
-        m_MethodName: CambiarEscenastr
+        m_MethodName: CambiarEscena
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Morion2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &923445848
@@ -1190,7 +1190,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LEVEL 2 '
+  m_text: Medium
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f4f4160273e01da47aa29ac74d36e916, type: 2}
   m_sharedMaterial: {fileID: 1688412892320241161, guid: f4f4160273e01da47aa29ac74d36e916,
@@ -1551,7 +1551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LEVEL 1
+  m_text: easy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f4f4160273e01da47aa29ac74d36e916, type: 2}
   m_sharedMaterial: {fileID: 1688412892320241161, guid: f4f4160273e01da47aa29ac74d36e916,
