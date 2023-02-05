@@ -23,13 +23,17 @@ public class CreadorAmbiente : MonoBehaviour
 	public float altura;
 	public Vector3[] posiciones;
 	public float tamañoTerreno = 50;
+	float minimo = 10000;
+	float maximo = -10000;
 
-    public Texture2D    imagenBase;
+	public Texture2D    imagenBase;
     public RawImage     rawImage;
 
 	public static CreadorAmbiente singleton;
 
 	public List<Vector2> listaCentros;
+
+	public GameObject jugador;
 
 	private void Awake()
 	{
@@ -49,7 +53,7 @@ public class CreadorAmbiente : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.M))
 		{
 			GenerarMapa();
 		}
@@ -157,6 +161,8 @@ public class CreadorAmbiente : MonoBehaviour
 		imagenBase.Apply();
 		mallaPiso.material.SetTexture("_BaseMap", imagenBase);
 		CambiarMalla();
+
+		InstanciarCosas();
 	}
 
 	public void Dibujarcirculo(int r, int x, int y, Color c)
@@ -180,8 +186,8 @@ public class CreadorAmbiente : MonoBehaviour
 	{
 		posiciones = malla.mesh.vertices;
 		float nx, nz;
-		float minimo = 10000;
-		float maximo = -10000;
+		minimo = 10000;
+		maximo = -10000;
 		for (int i = 0; i < posiciones.Length; i++)
 		{
 			if (posiciones[i].x < minimo)
@@ -204,5 +210,21 @@ public class CreadorAmbiente : MonoBehaviour
 		malla.mesh.SetVertices(posiciones);
 		malla.mesh.RecalculateNormals();
 		mCollider.sharedMesh = malla.mesh;
+	}
+
+	public void InstanciarCosas()
+	{
+		int p = Random.Range(0, listaCentros.Count);
+		jugador.transform.position = CalcularPosicion((int)listaCentros[p].x, (int)listaCentros[p].y);
+
+	}
+
+	public Vector3 CalcularPosicion(int x, int y)
+	{
+		return new Vector3(
+			- (minimo + ((float)x / (float)ancho) * (maximo - minimo)),
+			0,
+			- (minimo + ((float)y / (float)ancho) * (maximo - minimo))
+			);
 	}
 }
