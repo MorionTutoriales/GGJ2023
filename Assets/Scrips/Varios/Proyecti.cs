@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Proyecti : MonoBehaviour
 {
     public float fuerzaInicial;
     Rigidbody rb;
     public GameObject[] objetos;
+    public GameObject particulasExplo;
+    public float daño = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +22,13 @@ public class Proyecti : MonoBehaviour
 		}
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void OnCollisionEnter(Collision collision)
+	{
+		if (collision.collider.CompareTag("Gusano"))
+		{
+            Instantiate(particulasExplo, transform.position, transform.rotation);
+            BossFinal.singleton.QuitarVida(daño);
+            Destroy(gameObject);
+		}
+	}
 }

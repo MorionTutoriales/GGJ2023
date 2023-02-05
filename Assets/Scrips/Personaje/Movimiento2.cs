@@ -65,8 +65,13 @@ public class Movimiento2 : MonoBehaviour
             controlPrincipal.enabled = (!(pCarga > 0));
             if ((pCarga > 0)) {
                 cargaActual += (velocidadCarga/5f) * Time.deltaTime;
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/ArracachaMan/cargacosechando");
             }
-            if (pCarga < 0.1f) cargaActual = 0;
+            if (pCarga < 0.1f) {
+                cargaActual = 0;
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
+            }
 			if (Municion.objetoActivo != null)
 			{
                 Municion.objetoActivo.imagenCarga.transform.LookAt(Camera.main.transform);
@@ -96,6 +101,7 @@ public class Movimiento2 : MonoBehaviour
         enZonaMunicion = false;
         pCarga = 0;
         cargaActual = 0;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
         controlPrincipal.enabled = true;
 	}
 

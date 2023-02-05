@@ -12,10 +12,22 @@ public class BossFinal : MonoBehaviour
 	public AlemiMorion alemic;
 	public Transform punto;
 	public GameObject proyectil;
+	public static BossFinal singleton;
+	public Instanciador[] instanciadores;
 
-    // Start is called before the first frame update
-    IEnumerator Start()
+	public float vidaActual;
+	public float vidaInicial = 100;
+	bool activo;
+
+	private void Awake()
+	{
+		singleton = this;
+	}
+
+	// Start is called before the first frame update
+	IEnumerator Start()
     {
+		vidaActual = vidaInicial;
         yield return new WaitForSeconds(8);
         jugador = Movimiento2.singleton.transform;
 		plataforma.parent = null;
@@ -27,9 +39,12 @@ public class BossFinal : MonoBehaviour
 		yield return new WaitForSeconds(2);
 		animaciones.SetBool("visible", true);
 		transform.forward = (jugador.transform.position - transform.position).normalized;
+		StartCoroutine(InstanciarEnemigos());
+		activo = true;
 		while (true)
 		{
 			yield return new WaitForSeconds(Random.Range(tiemposAtacar.x, tiemposAtacar.y));
+			
 			if ((transform.position-jugador.position).magnitude < distanciaPeligrosa)
 			{
 				for (int i = 0; i < 40; i++)
@@ -45,11 +60,35 @@ public class BossFinal : MonoBehaviour
 		}
     }
 
+	public void QuitarVida(float cuanto)
+	{
+		vidaActual -= cuanto;
+		if (vidaActual<=0)
+		{
+			Morir();
+		}
+	}
+
+	void Morir()
+	{
+		Destroy(gameObject);
+	}
+
 	private void OnDrawGizmosSelected()
 	{
 		Gizmos.color = Color.red;
 		Gizmos.DrawWireSphere(transform.position, distanciaPeligrosa);
 	}
 
-
+	IEnumerator InstanciarEnemigos()
+	{
+		while (true)
+		{
+			yield return new WaitForSeconds(Random.Range(10, 30));
+			if (activo)
+			{
+				instanciadores[Random.Range(0, instanciadores.Length)].Instanciar();
+			}
+		}
+	}
 }
