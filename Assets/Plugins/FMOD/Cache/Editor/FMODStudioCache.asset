@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2296
+  Length: 2179
 --- !u!114 &-4139201021832071390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   - {fileID: 8668139829609309700}
   StringsBanks:
   - {fileID: 4781783954865716004}
-  cacheTime: 638111634462805657
+  cacheTime: 638111637654981419
   cacheVersion: 131601
 --- !u!114 &4781783954865716004
 MonoBehaviour:
@@ -150,7 +150,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111634462805657
+  lastModified: 638111637654981419
   FileSizes:
   - Name: Desktop
     Value: 896
@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111634462785646
+  lastModified: 638111637654951415
   FileSizes:
   - Name: Desktop
     Value: 402496
