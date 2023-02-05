@@ -49,7 +49,7 @@ public class Movimiento2 : MonoBehaviour
 				if (Time.time > tiempoUltimoTrigger)
 				{
                     animaciones.SetTrigger("Carga2");
-                    tiempoUltimoTrigger = Time.time + 1;
+                    tiempoUltimoTrigger = Time.time + 5;
                 }
                 Invoke("DesCargar", 2);
 
