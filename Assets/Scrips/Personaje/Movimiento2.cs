@@ -53,10 +53,11 @@ public class Movimiento2 : MonoBehaviour
             eventoSaltar.Invoke();
         }
 
-        if (prDisparo.action.ReadValue<float>() > 0 && Time.time > ultimoDisparo && pCarga<0.1f)
+        if (InterfazUI.singleton.cantProyectiles > 0 && prDisparo.action.ReadValue<float>() > 0 && Time.time > ultimoDisparo && pCarga<0.1f)
 		{
             ultimoDisparo = Time.time + frecuenciaDisparo;
             animaciones.SetTrigger("Shoot");
+            InterfazUI.singleton.Disparar();
             Instantiate(bala, posDisparo.position, posDisparo.rotation);
             Invoke("InstanciarParticulas", 0.2f);
 		}

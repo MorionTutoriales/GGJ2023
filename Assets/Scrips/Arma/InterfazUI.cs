@@ -8,14 +8,25 @@ public class InterfazUI : MonoBehaviour
 {
     public int cantProyectiles;
     public int cantTotalProyectiles;
+    public static InterfazUI singleton;
 
     public TextMeshProUGUI cantProyectilesTXT;
-    public TextMeshProUGUI cantTotalProyectilesTXT;
 
-    public void Disparar()
+	private void Awake()
+	{
+        singleton = this;
+        ActualizarUI();
+	}
+
+	public void Disparar()
     {
         cantProyectiles--;
-        cantProyectilesTXT.text = cantProyectiles + "/" + cantProyectiles;
+        cantProyectilesTXT.text = cantProyectiles + "/" + cantTotalProyectiles;
+    }
+
+    public void ActualizarUI()
+    {
+        cantProyectilesTXT.text = cantProyectiles + "/" + cantTotalProyectiles;
     }
 
     public void Recargar(int cuanto)
@@ -26,7 +37,7 @@ public class InterfazUI : MonoBehaviour
         {
             cantProyectiles = cantTotalProyectiles;
         }
-        cantTotalProyectilesTXT.text = cantProyectiles + "/" + cantProyectiles;
+        cantProyectilesTXT.text = cantProyectiles + "/" + cantTotalProyectiles;
 
     }
 }
