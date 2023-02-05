@@ -216,7 +216,7 @@ public class CreadorAmbiente : MonoBehaviour
 	public void InstanciarCosas()
 	{
 		int p = Random.Range(0, listaCentros.Count);
-		Instantiate(jugador, CalcularPosicion((int)listaCentros[p].x, (int)listaCentros[p].y) + Vector3.up, Quaternion.identity);
+		//Instantiate(jugador, CalcularPosicion((int)listaCentros[p].x, (int)listaCentros[p].y) + Vector3.up, Quaternion.identity);
 
 	}
 
