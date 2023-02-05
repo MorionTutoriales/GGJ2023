@@ -106,6 +106,7 @@ public class IAenemigo2 : MonoBehaviour
         {
             GameObject effect = Instantiate(particulas);
             effect.transform.position = transform.position;
+            
         }
     }
 }
