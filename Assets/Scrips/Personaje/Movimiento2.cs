@@ -30,6 +30,9 @@ public class Movimiento2 : MonoBehaviour
     public float velocidadCarga = 0.5f;
     public float cargaActual = 0;
     float tiempoUltimoTrigger;
+    public bool yaSono = false;
+
+    public int cuantoRecarga = 10;
 
 	private void Awake()
 	{
@@ -52,10 +55,11 @@ public class Movimiento2 : MonoBehaviour
             eventoSaltar.Invoke();
         }
 
-        if (prDisparo.action.ReadValue<float>() > 0 && Time.time > ultimoDisparo && pCarga<0.1f)
+        if (InterfazUI.singleton.cantProyectiles > 0 && prDisparo.action.ReadValue<float>() > 0 && Time.time > ultimoDisparo && pCarga<0.1f)
 		{
             ultimoDisparo = Time.time + frecuenciaDisparo;
             animaciones.SetTrigger("Shoot");
+            InterfazUI.singleton.Disparar();
             Instantiate(bala, posDisparo.position, posDisparo.rotation);
             Invoke("InstanciarParticulas", 0.2f);
 		}
@@ -66,15 +70,19 @@ public class Movimiento2 : MonoBehaviour
             if ((pCarga > 0)) {
                 cargaActual += (velocidadCarga/5f) * Time.deltaTime;
                 FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
-                FMODUnity.RuntimeManager.PlayOneShot("event:/ArracachaMan/cargacosechando");
+				if (!yaSono)
+				{
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/ArracachaMan/cargacosechando");
+                    yaSono = true;
+                }
             }
             if (pCarga < 0.1f) {
                 cargaActual = 0;
                 FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
+                yaSono = false;
             }
 			if (Municion.objetoActivo != null)
 			{
-                Municion.objetoActivo.imagenCarga.transform.LookAt(Camera.main.transform);
                 Municion.objetoActivo.imagenCarga.fillAmount = cargaActual;
 			}
 			if (cargaActual >= 1)
@@ -102,7 +110,9 @@ public class Movimiento2 : MonoBehaviour
         pCarga = 0;
         cargaActual = 0;
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
+        yaSono = false;
         controlPrincipal.enabled = true;
+        InterfazUI.singleton.Recargar(cuantoRecarga);
 	}
 
 	// Update is called once per frame
