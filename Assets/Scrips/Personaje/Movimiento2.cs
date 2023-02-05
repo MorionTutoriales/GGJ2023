@@ -42,12 +42,13 @@ public class Movimiento2 : MonoBehaviour
 		{
             pCarga = prCarga.action.ReadValue<float>();
             controlPrincipal.enabled = (!(pCarga > 0));
-            cargaActual += (velocidadCarga/10f) * Time.deltaTime;
+            if ((pCarga > 0)) cargaActual += (velocidadCarga/5f) * Time.deltaTime;
 			if (cargaActual >= 1)
 			{
                 animaciones.SetTrigger("Carga2");
-                Invoke("DesCargar", 2f);
-			}
+                DesCargar();
+
+            }
 
 		}
     }
@@ -55,6 +56,7 @@ public class Movimiento2 : MonoBehaviour
     public void DesCargar()
 	{
         Destroy(Municion.objetoActivo);
+        enZonaMunicion = false;
 	}
 
 	// Update is called once per frame
