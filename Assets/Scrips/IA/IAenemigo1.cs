@@ -10,7 +10,11 @@ public class IAenemigo1 : MonoBehaviour
     public float vida = 100f;
     public Animator anim;
 
-    void Update()
+	private void Start()
+	{
+        personaje = Movimiento2.singleton.gameObject.transform;
+    }
+	void Update()
     {
         switch (estado)
         {

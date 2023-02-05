@@ -73,7 +73,7 @@ public class BossFinal : MonoBehaviour
 	void Morir()
 	{
 		animaciones.SetBool("vivo", false);
-		Destroy(gameObject.GetComponent<Collider>());
+		//Destroy(gameObject.GetComponent<Collider>());
 		Destroy(this);
 	}
 
