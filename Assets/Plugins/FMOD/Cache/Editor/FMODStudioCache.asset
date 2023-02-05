@@ -1,14 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &-4344804643466347583
-=======
---- !u!114 &-3390860823888591601
->>>>>>> Morion
-=======
---- !u!114 &-4344804643466347583
->>>>>>> Morion
+--- !u!114 &-8977287415550474361
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17,10 +9,132 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Morion
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Saltar/Saltar
+  m_EditorClassIdentifier: 
+  Name: Saltar
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 506439124
+    data2: 2050337737
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-6431864960001150652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638111672286813491
+  FileSizes:
+  - Name: Desktop
+    Value: 1028
+  Exists: 1
+--- !u!114 &-5751193415881056225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Saltar
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Saltar
+  Guid:
+    Data1: -135591945
+    Data2: 1201370915
+    Data3: 199650970
+    Data4: -1352630537
+  Banks:
+  - {fileID: 8020344630299804947}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8977287415550474361}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1440
+--- !u!114 &-1849916278159367469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Saltar
+  m_EditorClassIdentifier: 
+  Name: Saltar
+  StudioPath: parameter:/Saltar
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 506439124
+    data2: 2050337737
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -6431864960001150652}
+  - {fileID: 8020344630299804947}
+  EditorEvents:
+  - {fileID: 6480111048699023753}
+  - {fileID: 3301115940938086839}
+  - {fileID: 2328361601452262788}
+  - {fileID: 5485595130974248483}
+  - {fileID: 2950474303121890306}
+  - {fileID: -5751193415881056225}
+  EditorParameters:
+  - {fileID: -1849916278159367469}
+  MasterBanks:
+  - {fileID: 8020344630299804947}
+  StringsBanks:
+  - {fileID: -6431864960001150652}
+  cacheTime: 638111672286813491
+  cacheVersion: 131601
+--- !u!114 &2328361601452262788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/ArracachaMan/Cosechando
   m_EditorClassIdentifier: 
@@ -31,7 +145,7 @@ MonoBehaviour:
     Data3: 987821473
     Data4: -1342512880
   Banks:
-  - {fileID: 8668139829609309700}
+  - {fileID: 8020344630299804947}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -39,7 +153,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2179
---- !u!114 &-4139201021832071390
+--- !u!114 &2950474303121890306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,7 +172,7 @@ MonoBehaviour:
     Data3: -138414965
     Data4: -1649018108
   Banks:
-  - {fileID: 8668139829609309700}
+  - {fileID: 8020344630299804947}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -66,34 +180,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3187
---- !u!114 &-3276003445034326014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ArracachaMan/Pasos
-  m_EditorClassIdentifier: 
-  Path: event:/ArracachaMan/Pasos
-  Guid:
-    Data1: 1189506236
-    Data2: 1166126557
-    Data3: 1393842357
-    Data4: -413647346
-  Banks:
-  - {fileID: 8668139829609309700}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 656
---- !u!114 &-1800306929515073547
+--- !u!114 &3301115940938086839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,15 +199,67 @@ MonoBehaviour:
     Data3: 2015563196
     Data4: 1506165175
   Banks:
-  - {fileID: 8668139829609309700}
+  - {fileID: 8020344630299804947}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2887
---- !u!114 &-1123845706386124848
+  Length: 4387
+--- !u!114 &4220146313440426756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Pasos/Saltar
+  m_EditorClassIdentifier: 
+  Name: Saltar
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 506439124
+    data2: 2050337737
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &5485595130974248483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Pasos
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Pasos
+  Guid:
+    Data1: 1189506236
+    Data2: 1166126557
+    Data3: 1393842357
+    Data4: -413647346
+  Banks:
+  - {fileID: 8020344630299804947}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4220146313440426756}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 656
+--- !u!114 &6480111048699023753
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +278,7 @@ MonoBehaviour:
     Data3: -2138826870
     Data4: -608417747
   Banks:
-  - {fileID: 8668139829609309700}
+  - {fileID: 8020344630299804947}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -147,97 +286,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 634
-<<<<<<< HEAD
-=======
+--- !u!114 &8020344630299804947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111480282609472
+  lastModified: 638111672286793482
   FileSizes:
   - Name: Desktop
-    Value: 6560
-  Exists: 1
->>>>>>> Morion
-=======
->>>>>>> Morion
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 959461244037290961}
-  - {fileID: -3390860823888591601}
-  EditorEvents:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Morion
-  - {fileID: -1123845706386124848}
-  - {fileID: -1800306929515073547}
-  - {fileID: -4344804643466347583}
-  - {fileID: -4139201021832071390}
-  - {fileID: -3276003445034326014}
-<<<<<<< HEAD
-=======
-  - {fileID: 7141753734225734710}
->>>>>>> Morion
-=======
->>>>>>> Morion
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -3390860823888591601}
-  StringsBanks:
-  - {fileID: 4781783954865716004}
-  cacheTime: 638111644716525289
-  cacheVersion: 131601
---- !u!114 &959461244037290961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638111644716525289
-  FileSizes:
-  - Name: Desktop
-    Value: 932
-  Exists: 1
---- !u!114 &7141753734225734710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Shoot
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638111644716505276
-  FileSizes:
-  - Name: Desktop
-    Value: 491808
+    Value: 493536
   Exists: 1
