@@ -18,9 +18,14 @@ public class Movimiento2 : MonoBehaviour
     public InputActionProperty prCarga;
     public float pCarga;
     public MonoBehaviour controlPrincipal;
+    public bool enZonaMunicion;
+    public static Movimiento2 singleton;
+    public float velocidadCarga = 0.5f;
+    public float cargaActual = 0;
 
     void Start()
     {
+        singleton = this;
         prDisparo.action.Enable();
         prCarga.action.Enable();
     }
@@ -28,15 +33,29 @@ public class Movimiento2 : MonoBehaviour
 	{
         btnDisparar = prDisparo.action.ReadValue<float>();
 
-        if (prDisparo.action.ReadValue<float>()>0 && Time.time > ultimoDisparo)
+        if (prDisparo.action.ReadValue<float>()>0 && Time.time > ultimoDisparo && pCarga<0.1f)
 		{
             ultimoDisparo = Time.time + frecuenciaDisparo;
             animaciones.SetTrigger("Shoot");
 		}
-        pCarga = prCarga.action.ReadValue<float>();
-        controlPrincipal.enabled = (!(pCarga > 0));
-        animaciones.SetFloat("Carga", pCarga);
+		if (velocidad < 0.1f && enZonaMunicion)
+		{
+            pCarga = prCarga.action.ReadValue<float>();
+            controlPrincipal.enabled = (!(pCarga > 0));
+            cargaActual += (velocidadCarga/10f) * Time.deltaTime;
+			if (cargaActual >= 1)
+			{
+                animaciones.SetTrigger("Carga");
+                Invoke("DesCargar", 2f);
+			}
+
+		}
     }
+
+    public void DesCargar()
+	{
+        Destroy(Municion.objetoActivo);
+	}
 
 	// Update is called once per frame
 	void FixedUpdate()
@@ -45,4 +64,5 @@ public class Movimiento2 : MonoBehaviour
         posAnterior = transform.position;
         animaciones.SetFloat("velocidad", velocidad);
     }
+
 }
