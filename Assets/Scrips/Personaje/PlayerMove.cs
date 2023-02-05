@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
+    public Animator animation;
+
     public InputActionProperty cMovimiento;
     public CharacterController controller;
 
@@ -36,6 +38,7 @@ public class PlayerMove : MonoBehaviour
 
             controller.Move(direction * speed * Time.deltaTime);
         }
+        animation.SetBool("Corriendo", direction.magnitude > 0);
     }
 
 }
