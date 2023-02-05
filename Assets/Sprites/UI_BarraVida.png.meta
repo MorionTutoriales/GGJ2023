@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 32516964d3c5b154492263cab442e030
+guid: fdfd7484325e69244bbc0eb54f5aac58
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,10 +39,10 @@ TextureImporter:
     wrapU: 0
     wrapV: 0
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -53,7 +53,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -103,18 +103,107 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UI_BarraVida_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 377
+        width: 431
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f391d5e8bf03ef4db143b70295b295e
+      internalID: -944039675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BarraVida_2
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 288
+        width: 174
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2effc9e65c9a4468c88262701519e1
+      internalID: -1803940075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BarraVida_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 317
+        width: 387
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d98bfa5f92497e45b14947e11ccc6d5
+      internalID: -1961643534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_BarraVida_4
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 16
+        width: 341
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f969eeeb62086419105463a0dd34dd
+      internalID: -193268228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: af034b6059437be4fb91c206e6e9e836
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI_BarraVida_3: -1961643534
+      UI_BarraVida_4: -193268228
+      UI_BarraVida_0: -944039675
+      UI_BarraVida_1: 575915808
+      UI_BarraVida_2: -1803940075
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

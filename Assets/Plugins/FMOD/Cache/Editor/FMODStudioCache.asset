@@ -1,9 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &-4344804643466347583
 =======
 --- !u!114 &-3390860823888591601
+>>>>>>> Morion
+=======
+--- !u!114 &-4344804643466347583
 >>>>>>> Morion
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,6 +18,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Morion
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/ArracachaMan/Cosechando
   m_EditorClassIdentifier: 
@@ -140,6 +147,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 634
+<<<<<<< HEAD
 =======
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
@@ -152,6 +160,8 @@ MonoBehaviour:
   - Name: Desktop
     Value: 6560
   Exists: 1
+>>>>>>> Morion
+=======
 >>>>>>> Morion
 --- !u!114 &11400000
 MonoBehaviour:
@@ -170,13 +180,19 @@ MonoBehaviour:
   - {fileID: -3390860823888591601}
   EditorEvents:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Morion
   - {fileID: -1123845706386124848}
   - {fileID: -1800306929515073547}
   - {fileID: -4344804643466347583}
   - {fileID: -4139201021832071390}
   - {fileID: -3276003445034326014}
+<<<<<<< HEAD
 =======
   - {fileID: 7141753734225734710}
+>>>>>>> Morion
+=======
 >>>>>>> Morion
   EditorParameters: []
   MasterBanks:

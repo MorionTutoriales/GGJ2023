@@ -12,9 +12,5 @@ public class BossFinal : MonoBehaviour
         jugador = Movimiento2.singleton.transform;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
