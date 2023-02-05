@@ -63,7 +63,9 @@ public class Movimiento2 : MonoBehaviour
 		{
             pCarga = prCarga.action.ReadValue<float>();
             controlPrincipal.enabled = (!(pCarga > 0));
-            if ((pCarga > 0)) cargaActual += (velocidadCarga/5f) * Time.deltaTime;
+            if ((pCarga > 0)) {
+                cargaActual += (velocidadCarga/5f) * Time.deltaTime;
+            }
             if (pCarga < 0.1f) cargaActual = 0;
 			if (Municion.objetoActivo != null)
 			{
