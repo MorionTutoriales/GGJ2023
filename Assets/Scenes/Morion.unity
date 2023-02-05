@@ -1339,8 +1339,7 @@ MonoBehaviour:
   imagenBase: {fileID: 0}
   rawImage: {fileID: 1461322583}
   listaCentros: []
-  jugador: {fileID: 619896826862758952, guid: 1c27f6707117d5247b662a8bf40ed09d, type: 3}
-  cubo: {fileID: 0}
+  jugador: {fileID: 228089585}
 --- !u!4 &1343673377
 Transform:
   m_ObjectHideFlags: 0
@@ -1892,6 +1891,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1762682258}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1779647960 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544,
+    type: 3}
+  m_PrefabInstance: {fileID: 1762682258}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688841631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e54e5a728a9234ab24fcf1460ed8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1799401616
 Transform:
   m_ObjectHideFlags: 0
@@ -2090,6 +2101,21 @@ MonoBehaviour:
       type: 3}
   frecuenciaDisparo: 0.5
   btnDisparar: 0
+  prCarga:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Pr Carga
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d4ac32d2-b1c3-42b8-b349-1adee8c99b61
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 8777548746246162357, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+      type: 3}
+  pCarga: 0
+  controlPrincipal: {fileID: 1779647960}
 --- !u!1001 &5232417406791333695
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,9 +15,14 @@ public class Movimiento2 : MonoBehaviour
     public float btnDisparar;
 
     Vector3 posAnterior;
+    public InputActionProperty prCarga;
+    public float pCarga;
+    public MonoBehaviour controlPrincipal;
+
     void Start()
     {
         prDisparo.action.Enable();
+        prCarga.action.Enable();
     }
 	private void Update()
 	{
@@ -28,7 +33,10 @@ public class Movimiento2 : MonoBehaviour
             ultimoDisparo = Time.time + frecuenciaDisparo;
             animaciones.SetTrigger("Shoot");
 		}
-	}
+        pCarga = prCarga.action.ReadValue<float>();
+        controlPrincipal.enabled = (!(pCarga > 0));
+        animaciones.SetFloat("Carga", pCarga);
+    }
 
 	// Update is called once per frame
 	void FixedUpdate()

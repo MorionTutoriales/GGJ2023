@@ -34,7 +34,6 @@ public class CreadorAmbiente : MonoBehaviour
 	public List<Vector2> listaCentros;
 
 	public GameObject jugador;
-	public GameObject cubo;
 
 	private void Awake()
 	{
@@ -216,7 +215,7 @@ public class CreadorAmbiente : MonoBehaviour
 	public void InstanciarCosas()
 	{
 		int p = Random.Range(0, listaCentros.Count);
-		//Instantiate(jugador, CalcularPosicion((int)listaCentros[p].x, (int)listaCentros[p].y) + Vector3.up, Quaternion.identity);
+		jugador.transform.position = CalcularPosicion((int)listaCentros[p].x, (int)listaCentros[p].y);
 
 	}
 
