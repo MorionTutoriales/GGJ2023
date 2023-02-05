@@ -18,7 +18,7 @@ public class BossFinal : MonoBehaviour
 	public float vidaActual;
 	public float vidaInicial = 100;
 	bool activo;
-
+	public BarraDeVida barraVida;
 	private void Awake()
 	{
 		singleton = this;
@@ -63,6 +63,7 @@ public class BossFinal : MonoBehaviour
 	public void QuitarVida(float cuanto)
 	{
 		vidaActual -= cuanto;
+		barraVida.vidaActual = vidaActual;
 		if (vidaActual<=0)
 		{
 			Morir();
@@ -71,7 +72,9 @@ public class BossFinal : MonoBehaviour
 
 	void Morir()
 	{
-		Destroy(gameObject);
+		animaciones.SetBool("vivo", false);
+		Destroy(gameObject.GetComponent<Collider>());
+		Destroy(this);
 	}
 
 	private void OnDrawGizmosSelected()

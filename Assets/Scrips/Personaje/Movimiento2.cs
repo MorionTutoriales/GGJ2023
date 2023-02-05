@@ -33,6 +33,18 @@ public class Movimiento2 : MonoBehaviour
     public bool yaSono = false;
 
     public int cuantoRecarga = 10;
+    public BarraDeVida barraVida;
+
+    public void Morir()
+	{
+        print("MUERTO");
+        animaciones.SetBool("vivo", false);
+        enabled = false;
+	}
+    public void CausarDaño(float d)
+	{
+        barraVida.vidaActual -= d;
+	}
 
 	private void Awake()
 	{

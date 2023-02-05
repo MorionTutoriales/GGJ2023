@@ -20,6 +20,7 @@ public class Proyecti : MonoBehaviour
 		{
             objetos[i].SetActive(i == o);
 		}
+        Destroy(gameObject, 20);
     }
 
 	private void OnCollisionEnter(Collision collision)

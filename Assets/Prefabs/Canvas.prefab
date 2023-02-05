@@ -455,8 +455,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.3276, y: -0.3999939}
-  m_SizeDelta: {x: 121.5463, y: 50}
+  m_AnchoredPosition: {x: 6.5358, y: 2.8689}
+  m_SizeDelta: {x: 158.9704, y: 56.5378}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5238214178126081766
 CanvasRenderer:
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0/0
+  m_text: 20/40
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f4f4160273e01da47aa29ac74d36e916, type: 2}
   m_sharedMaterial: {fileID: 1688412892320241161, guid: f4f4160273e01da47aa29ac74d36e916,
@@ -514,15 +514,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.32
-  m_fontSizeBase: 43.32
+  m_fontSize: 30.17
+  m_fontSizeBase: 30.17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -824,8 +824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e80cf46ad1933704996cb6425c9c5d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cantProyectiles: 0
-  cantTotalProyectiles: 0
+  cantProyectiles: 20
+  cantTotalProyectiles: 40
   cantProyectilesTXT: {fileID: 5238214178126081761}
 --- !u!1 &8161367977113552223
 GameObject:
