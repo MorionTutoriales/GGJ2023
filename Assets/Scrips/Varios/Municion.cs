@@ -13,10 +13,6 @@ public class Municion : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-		if (objetoActivo != null && objetoActivo==this)
-		{
-            transform.forward = (Camera.main.transform.position - transform.position).normalized;
-        }
     }
 
 	private void OnDestroy()

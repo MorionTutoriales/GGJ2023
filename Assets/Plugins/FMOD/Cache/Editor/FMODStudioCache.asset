@@ -24,6 +24,34 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-7865918052181460413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Disparando
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Disparando
+  Guid:
+    Data1: 1746573817
+    Data2: 1281864625
+    Data3: -138414965
+    Data4: -1649018108
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 909141404895028179}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3187
 --- !u!114 &-7690341606534539199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,6 +76,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-6641412591397627077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Hurt
+  Guid:
+    Data1: 1736914265
+    Data2: 1083291116
+    Data3: -2138826870
+    Data4: -608417747
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 634
 --- !u!114 &-6431864960001150652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,6 +119,26 @@ MonoBehaviour:
   Name: Master.strings
   StudioPath: bank:/Master.strings
   lastModified: 638111907418559796
+  FileSizes:
+  - Name: Desktop
+    Value: 1192
+  Exists: 1
+--- !u!114 &-6147435469291570980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638111943662608841
   FileSizes:
   - Name: Desktop
     Value: 1192
@@ -97,6 +172,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1300
+--- !u!114 &-4744450485221797986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/salto y disparo
+  m_EditorClassIdentifier: 
+  Name: salto y disparo
+  StudioPath: parameter:/Salto y disparo
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 966919438
+    data2: 3010765258
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-4647616713718370243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +220,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-4186470470599577280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/cosechando
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/cosechando
+  Guid:
+    Data1: -1533598298
+    Data2: 1295458467
+    Data3: 987821473
+    Data4: -1342512880
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2179
 --- !u!114 &-2651035590714691249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +295,34 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-638639067370547796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/cargacosechando
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/cargacosechando
+  Guid:
+    Data1: -1589980604
+    Data2: 1309309197
+    Data3: 1508686236
+    Data4: 1327295911
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 511498713272552175}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,25 +336,25 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -6431864960001150652}
-  - {fileID: 8020344630299804947}
+  - {fileID: -6147435469291570980}
+  - {fileID: 9190191681223250799}
   EditorEvents:
-  - {fileID: 6480111048699023753}
-  - {fileID: 3301115940938086839}
-  - {fileID: 5485595130974248483}
-  - {fileID: 2950474303121890306}
-  - {fileID: -5751193415881056225}
-  - {fileID: 4031557292779053579}
-  - {fileID: 180241468755613959}
+  - {fileID: -638639067370547796}
+  - {fileID: -6641412591397627077}
+  - {fileID: 8933161375124074772}
+  - {fileID: -4186470470599577280}
+  - {fileID: 8123168013618537845}
+  - {fileID: 5821865327851958863}
+  - {fileID: -7865918052181460413}
   EditorParameters:
-  - {fileID: -1849916278159367469}
-  - {fileID: 8599437799626646949}
-  - {fileID: -4647616713718370243}
+  - {fileID: 2485706844285538112}
+  - {fileID: -4744450485221797986}
+  - {fileID: 4970358101542138010}
   MasterBanks:
-  - {fileID: 8020344630299804947}
+  - {fileID: 9190191681223250799}
   StringsBanks:
-  - {fileID: -6431864960001150652}
-  cacheTime: 638111907418559796
+  - {fileID: -6147435469291570980}
+  cacheTime: 638111943662691967
   cacheVersion: 131601
 --- !u!114 &180241468755613959
 MonoBehaviour:
@@ -229,6 +383,102 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2179
+--- !u!114 &511498713272552175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cargacosechando/cosechando
+  m_EditorClassIdentifier: 
+  Name: cosechando
+  StudioPath: 
+  Min: 0
+  Max: 1.1
+  Default: 0
+  ID:
+    data1: 1843878816
+    data2: 65142811
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &909141404895028179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Disparando/salto y disparo
+  m_EditorClassIdentifier: 
+  Name: salto y disparo
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 966919438
+    data2: 3010765258
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &1349495960721103351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Saltar/Saltar
+  m_EditorClassIdentifier: 
+  Name: Saltar
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 506439124
+    data2: 2050337737
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2485706844285538112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Saltar
+  m_EditorClassIdentifier: 
+  Name: Saltar
+  StudioPath: parameter:/Saltar
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 506439124
+    data2: 2050337737
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &2950474303121890306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,6 +586,78 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &4507310877292578750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Saltar/salto y disparo
+  m_EditorClassIdentifier: 
+  Name: salto y disparo
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 966919438
+    data2: 3010765258
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &4970358101542138010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cosechando
+  m_EditorClassIdentifier: 
+  Name: cosechando
+  StudioPath: parameter:/cosechando
+  Min: 0
+  Max: 1.1
+  Default: 0
+  ID:
+    data1: 1843878816
+    data2: 65142811
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &5450247416025260533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Pasos/Saltar
+  m_EditorClassIdentifier: 
+  Name: Saltar
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 506439124
+    data2: 2050337737
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &5485595130974248483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,6 +686,35 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 656
+--- !u!114 &5821865327851958863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Saltar
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Saltar
+  Guid:
+    Data1: -135591945
+    Data2: 1201370915
+    Data3: 199650970
+    Data4: -1352630537
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4507310877292578750}
+  - {fileID: 1349495960721103351}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1300
 --- !u!114 &6480111048699023753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,6 +762,34 @@ MonoBehaviour:
   - Name: Desktop
     Value: 640960
   Exists: 1
+--- !u!114 &8123168013618537845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Pasos
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Pasos
+  Guid:
+    Data1: 1189506236
+    Data2: 1166126557
+    Data3: 1393842357
+    Data4: -413647346
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5450247416025260533}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 656
 --- !u!114 &8599437799626646949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,6 +814,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &8933161375124074772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Spawn
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Spawn
+  Guid:
+    Data1: 565976450
+    Data2: 1139420073
+    Data3: 2015563196
+    Data4: 1506165175
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4387
 --- !u!114 &8996755894698863470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,4 +864,24 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Labels: []
+  Exists: 1
+--- !u!114 &9190191681223250799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638111943662691967
+  FileSizes:
+  - Name: Desktop
+    Value: 640960
   Exists: 1

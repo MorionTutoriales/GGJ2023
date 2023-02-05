@@ -32,6 +32,8 @@ public class Movimiento2 : MonoBehaviour
     float tiempoUltimoTrigger;
     public bool yaSono = false;
 
+    public int cuantoRecarga = 10;
+
 	private void Awake()
 	{
         singleton = this;
@@ -81,7 +83,6 @@ public class Movimiento2 : MonoBehaviour
             }
 			if (Municion.objetoActivo != null)
 			{
-                Municion.objetoActivo.imagenCarga.transform.LookAt(Camera.main.transform);
                 Municion.objetoActivo.imagenCarga.fillAmount = cargaActual;
 			}
 			if (cargaActual >= 1)
@@ -111,6 +112,7 @@ public class Movimiento2 : MonoBehaviour
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
         yaSono = false;
         controlPrincipal.enabled = true;
+        InterfazUI.singleton.Recargar(cuantoRecarga);
 	}
 
 	// Update is called once per frame
