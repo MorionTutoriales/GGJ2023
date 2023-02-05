@@ -18,7 +18,6 @@ public class IAenemigo2 : MonoBehaviour
     {
         pos = transform.position;
         personaje = Movimiento2.singleton.gameObject.transform;
-        Debug.LogWarning("AAAAAAAAAAAAAAA");
     }
 
     void Update()
