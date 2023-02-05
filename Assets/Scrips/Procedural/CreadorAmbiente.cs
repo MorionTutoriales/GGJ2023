@@ -34,6 +34,7 @@ public class CreadorAmbiente : MonoBehaviour
 	public List<Vector2> listaCentros;
 
 	public GameObject jugador;
+	public GameObject boss;
 	[Header("Props")]
 	public GameObject[] objetosProps;
 	List<Vector3> listaBases = new List<Vector3>();
@@ -225,6 +226,13 @@ public class CreadorAmbiente : MonoBehaviour
 	{
 		int p = Random.Range(0, listaCentros.Count);
 		jugador.transform.position = CalcularPosicion((int)listaCentros[p].x, (int)listaCentros[p].y);
+
+		int p2 = Random.Range(0, listaCentros.Count);
+		if (p == p2)
+		{
+			p2 = (p2 + 1) % listaBases.Count;
+		}
+		boss.transform.position = CalcularPosicion((int)listaCentros[p2].x, (int)listaCentros[p2].y);
 
 		for (int i = 0; i < iteracionesCosas; i++)
 		{
