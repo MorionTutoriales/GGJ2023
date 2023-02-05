@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3390860823888591601
+--- !u!114 &-4344804643466347583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,17 +9,105 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Cosechando
   m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638111480282609472
-  FileSizes:
-  - Name: Desktop
-    Value: 6560
-  Exists: 1
+  Path: event:/ArracachaMan/Cosechando
+  Guid:
+    Data1: -1533598298
+    Data2: 1295458467
+    Data3: 987821473
+    Data4: -1342512880
+  Banks:
+  - {fileID: 8668139829609309700}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2179
+--- !u!114 &-4139201021832071390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Disparando
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Disparando
+  Guid:
+    Data1: 1746573817
+    Data2: 1281864625
+    Data3: -138414965
+    Data4: -1649018108
+  Banks:
+  - {fileID: 8668139829609309700}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3187
+--- !u!114 &-1800306929515073547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Spawn
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Spawn
+  Guid:
+    Data1: 565976450
+    Data2: 1139420073
+    Data3: 2015563196
+    Data4: 1506165175
+  Banks:
+  - {fileID: 8668139829609309700}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2887
+--- !u!114 &-1123845706386124848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Hurt
+  Guid:
+    Data1: 1736914265
+    Data2: 1083291116
+    Data3: -2138826870
+    Data4: -608417747
+  Banks:
+  - {fileID: 8668139829609309700}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 634
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,13 +124,16 @@ MonoBehaviour:
   - {fileID: 959461244037290961}
   - {fileID: -3390860823888591601}
   EditorEvents:
-  - {fileID: 7141753734225734710}
+  - {fileID: -1123845706386124848}
+  - {fileID: -1800306929515073547}
+  - {fileID: -4344804643466347583}
+  - {fileID: -4139201021832071390}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3390860823888591601}
   StringsBanks:
   - {fileID: 4781783954865716004}
-  cacheTime: 638111486789223018
+  cacheTime: 638111637654981419
   cacheVersion: 131601
 --- !u!114 &959461244037290961
 MonoBehaviour:
@@ -59,10 +150,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111486789223018
+  lastModified: 638111637654981419
   FileSizes:
   - Name: Desktop
-    Value: 754
+    Value: 896
   Exists: 1
 --- !u!114 &7141753734225734710
 MonoBehaviour:
@@ -79,8 +170,8 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111486789213022
+  lastModified: 638111637654951415
   FileSizes:
   - Name: Desktop
-    Value: 6464
+    Value: 402496
   Exists: 1
