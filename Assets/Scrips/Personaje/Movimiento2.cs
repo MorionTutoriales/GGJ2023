@@ -48,7 +48,7 @@ public class Movimiento2 : MonoBehaviour
         animaciones.SetBool("vivo", false);
         enabled = false;
 	}
-    public void CausarDa�o(float d)
+    public void CausarDaño(float d)
 	{
         barraVida.vidaActual -= d;
 	}
