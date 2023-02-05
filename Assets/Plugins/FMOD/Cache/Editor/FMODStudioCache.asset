@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3187
+--- !u!114 &-3276003445034326014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Pasos
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Pasos
+  Guid:
+    Data1: 1189506236
+    Data2: 1166126557
+    Data3: 1393842357
+    Data4: -413647346
+  Banks:
+  - {fileID: 8668139829609309700}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 656
 --- !u!114 &-1800306929515073547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,12 +155,13 @@ MonoBehaviour:
   - {fileID: -1800306929515073547}
   - {fileID: -4344804643466347583}
   - {fileID: -4139201021832071390}
+  - {fileID: -3276003445034326014}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3390860823888591601}
   StringsBanks:
   - {fileID: 4781783954865716004}
-  cacheTime: 638111637654981419
+  cacheTime: 638111644716525289
   cacheVersion: 131601
 --- !u!114 &959461244037290961
 MonoBehaviour:
@@ -150,10 +178,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111637654981419
+  lastModified: 638111644716525289
   FileSizes:
   - Name: Desktop
-    Value: 896
+    Value: 932
   Exists: 1
 --- !u!114 &7141753734225734710
 MonoBehaviour:
@@ -170,8 +198,8 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111637654951415
+  lastModified: 638111644716505276
   FileSizes:
   - Name: Desktop
-    Value: 402496
+    Value: 491808
   Exists: 1
