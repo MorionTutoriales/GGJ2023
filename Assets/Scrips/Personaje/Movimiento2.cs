@@ -66,6 +66,7 @@ public class Movimiento2 : MonoBehaviour
             if ((pCarga > 0)) {
                 cargaActual += (velocidadCarga/5f) * Time.deltaTime;
                 FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/ArracachaMan/cargacosechando");
             }
             if (pCarga < 0.1f) {
                 cargaActual = 0;

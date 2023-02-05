@@ -84,7 +84,7 @@ public class BossFinal : MonoBehaviour
 	{
 		while (true)
 		{
-			yield return new WaitForSeconds(Random.Range(3, 10));
+			yield return new WaitForSeconds(Random.Range(10, 30));
 			if (activo)
 			{
 				instanciadores[Random.Range(0, instanciadores.Length)].Instanciar();
