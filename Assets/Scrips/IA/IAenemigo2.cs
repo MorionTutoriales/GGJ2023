@@ -12,10 +12,12 @@ public class IAenemigo2 : MonoBehaviour
     public float amplitud;
     private Vector3 pos;
     public float frecuencia;
+    public GameObject particulas;
 
-    private void Start()
+    void Start()
     {
         pos = transform.position;
+        personaje = Movimiento2.singleton.gameObject.transform;
     }
 
     void Update()
@@ -37,6 +39,7 @@ public class IAenemigo2 : MonoBehaviour
             default:
                 break;
         }
+        
     }
 
     void EstadoIdle()
@@ -64,7 +67,7 @@ public class IAenemigo2 : MonoBehaviour
             CambiarEstado(Estados.Muerto);
         }
 
-        if ((personaje.position - transform.position).magnitude < 2)
+        if ((personaje.position - transform.position).magnitude < 0.1f)
         {
             CambiarEstado(Estados.Atacando);
         }
@@ -94,5 +97,17 @@ public class IAenemigo2 : MonoBehaviour
     public void CambiarEstado(Estados nuevoEstado)
     {
         estado = nuevoEstado;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+
+        if (particulas != null)
+        {
+            GameObject effect = Instantiate(particulas);
+            effect.transform.position = transform.position;
+            
+        }
     }
 }

@@ -34,6 +34,13 @@ public class CreadorAmbiente : MonoBehaviour
 	public List<Vector2> listaCentros;
 
 	public GameObject jugador;
+	[Header("Props")]
+	public GameObject[] objetosProps;
+	List<Vector3> listaBases = new List<Vector3>();
+	public float frecuenciaCosas;
+	public float escalaCosas;
+	public float probabilidadAparecer;
+	public int iteracionesCosas;
 
 	private void Awake()
 	{
@@ -87,6 +94,7 @@ public class CreadorAmbiente : MonoBehaviour
 					if (Vector2.Distance(centro, new Vector2(x,y)) < (rad + sensibilidad * Mathf.PerlinNoise(offset.x + x * (tamaño / 100f), offset.y + y * (tamaño / 100f))))
 					{
 						imagenBase.SetPixel(x, y, c);
+						listaBases.Add(new Vector3(((float)x/((float)alto))*50f, 0, ((float)y / ((float)alto)) * 50f));
 					}
 				}
 			}
@@ -137,21 +145,21 @@ public class CreadorAmbiente : MonoBehaviour
 
 				if (c2 == Color.black && (c3 == Color.red || c1 == Color.red))
 				{
-					imagenBase.SetPixel(i, j, Color.green);
-					imagenBase.SetPixel(i, j+1, Color.green);
-					imagenBase.SetPixel(i, j-1, Color.green);
-					imagenBase.SetPixel(i-1, j, Color.green);
-					imagenBase.SetPixel(i-1, j+1, Color.green);
-					imagenBase.SetPixel(i-1, j-1, Color.green);
+					imagenBase.SetPixel(i, j, Color.yellow);
+					imagenBase.SetPixel(i, j+1, Color.yellow);
+					imagenBase.SetPixel(i, j-1, Color.yellow);
+					imagenBase.SetPixel(i-1, j, Color.yellow);
+					imagenBase.SetPixel(i-1, j+1, Color.yellow);
+					imagenBase.SetPixel(i-1, j-1, Color.yellow);
 				}
 				if (c2 == Color.black && (c4 == Color.red || c5 == Color.red))
 				{
-					imagenBase.SetPixel(i, j, Color.green);
-					imagenBase.SetPixel(i, j + 1, Color.green);
-					imagenBase.SetPixel(i, j - 1, Color.green);
-					imagenBase.SetPixel(i - 1, j, Color.green);
-					imagenBase.SetPixel(i - 1, j + 1, Color.green);
-					imagenBase.SetPixel(i - 1, j - 1, Color.green);
+					imagenBase.SetPixel(i, j, Color.yellow);
+					imagenBase.SetPixel(i, j + 1, Color.yellow);
+					imagenBase.SetPixel(i, j - 1, Color.yellow);
+					imagenBase.SetPixel(i - 1, j, Color.yellow);
+					imagenBase.SetPixel(i - 1, j + 1, Color.yellow);
+					imagenBase.SetPixel(i - 1, j - 1, Color.yellow);
 				}
 
 			}
@@ -177,6 +185,7 @@ public class CreadorAmbiente : MonoBehaviour
 				if (Vector2.Distance(p1,p2)<=r)
 				{
 					imagenBase.SetPixel(x + i, y + j, c);
+					//listaBases.Add(CalcularPosicion(x, y));
 				}
 			}
 		}
@@ -217,6 +226,19 @@ public class CreadorAmbiente : MonoBehaviour
 		int p = Random.Range(0, listaCentros.Count);
 		jugador.transform.position = CalcularPosicion((int)listaCentros[p].x, (int)listaCentros[p].y);
 
+		for (int i = 0; i < iteracionesCosas; i++)
+		{
+			Vector3 pos = posiciones[Random.Range(0,posiciones.Length)];
+			if (pos.y < 0.5f)
+			{
+				frecuenciaCosas = Random.Range(-100f, 500f);
+				float t = Mathf.PerlinNoise(pos.x * escalaCosas / 100f + frecuenciaCosas, pos.y * escalaCosas / 100f + frecuenciaCosas);
+				if (t < probabilidadAparecer)
+				{
+					Instantiate(objetosProps[Random.Range(0, objetosProps.Length)], pos, Quaternion.identity); ;
+				}
+			}
+		}
 	}
 
 	public Vector3 CalcularPosicion(int x, int y)
