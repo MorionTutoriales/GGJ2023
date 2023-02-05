@@ -8,10 +8,15 @@ public class Municion : MonoBehaviour
     public GameObject particulas;
     public static Municion objetoActivo;
     public Image imagenCarga;
+    public Animator anim;
+
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        
+		if (objetoActivo != null && objetoActivo==this)
+		{
+            transform.forward = (Camera.main.transform.position - transform.position).normalized;
+        }
     }
 
 	private void OnDestroy()
@@ -25,6 +30,8 @@ public class Municion : MonoBehaviour
         {
             Movimiento2.singleton.enZonaMunicion = true;
             objetoActivo = this;
+            anim.SetBool("visible", true);
+            
         }
     }
 
@@ -32,6 +39,7 @@ public class Municion : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            anim.SetBool("visible", false);
             Movimiento2.singleton.enZonaMunicion = false;
 			if (objetoActivo == this)
 			{

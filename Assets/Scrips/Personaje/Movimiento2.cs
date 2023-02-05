@@ -30,6 +30,7 @@ public class Movimiento2 : MonoBehaviour
     public float velocidadCarga = 0.5f;
     public float cargaActual = 0;
     float tiempoUltimoTrigger;
+    public bool yaSono = false;
 
 	private void Awake()
 	{
@@ -66,11 +67,16 @@ public class Movimiento2 : MonoBehaviour
             if ((pCarga > 0)) {
                 cargaActual += (velocidadCarga/5f) * Time.deltaTime;
                 FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
-                FMODUnity.RuntimeManager.PlayOneShot("event:/ArracachaMan/cargacosechando");
+				if (!yaSono)
+				{
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/ArracachaMan/cargacosechando");
+                    yaSono = true;
+                }
             }
             if (pCarga < 0.1f) {
                 cargaActual = 0;
                 FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
+                yaSono = false;
             }
 			if (Municion.objetoActivo != null)
 			{
@@ -102,6 +108,7 @@ public class Movimiento2 : MonoBehaviour
         pCarga = 0;
         cargaActual = 0;
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
+        yaSono = false;
         controlPrincipal.enabled = true;
 	}
 
