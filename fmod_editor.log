@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001D2C94EC4F8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000124403FFE08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,3 +18,140 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4224
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2240
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000015E4A7EFC8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA9ADD3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA9ADD3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA9ADD3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA9ADD3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001237392B788
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='AddingMachine 6028_11_6', format=5, channels=2, frequency=48000, lengthbytes=4096, lengthpcm=13312, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.980436.
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_0.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_0.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_1.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_1.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_2.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_2.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_3.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_3.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_4.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_4.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_5.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_5.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_6.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_6.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_7.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_7.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_8.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_8.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_9.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_9.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_10.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_10.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_11.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_11.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_12.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_12.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_13.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_13.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_14.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_14.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_15.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_15.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_16.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_16.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_17.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_17.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_18.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_18.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_19.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_19.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_20.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_20.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_21.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_21.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_22.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_22.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_23.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_23.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_24.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_24.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_25.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_25.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_26.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_26.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_27.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_27.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_28.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_28.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_29.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Daniel/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-pVadyC/hotswap_29.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] SoundI::release                          :  (00000124412F03F8)
+[LOG] SoundI::release                          :     AddingMachine 6028_11_6 (00000123692745F8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] ProfileClient::markForDead               : Closing client connection
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] FMOD_OS_Net_Read                         : Interrupted.[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] ProfileClient::recvThreadLoopFunction    : Socket disconnected
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.

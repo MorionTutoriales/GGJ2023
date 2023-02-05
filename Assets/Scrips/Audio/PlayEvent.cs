@@ -19,5 +19,6 @@ public class PlayEvent : MonoBehaviour
     public void PlayEvento(string evento)
     {
         FMODUnity.RuntimeManager.PlayOneShot(evento);
+        print (evento);
     }
 }

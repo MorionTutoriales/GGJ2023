@@ -41,8 +41,8 @@ MonoBehaviour:
   MasterBanks:
   - {fileID: -3390860823888591601}
   StringsBanks:
-  - {fileID: 959461244037290961}
-  cacheTime: 638111480282640649
+  - {fileID: 4781783954865716004}
+  cacheTime: 638111486789223018
   cacheVersion: 131601
 --- !u!114 &959461244037290961
 MonoBehaviour:
@@ -59,7 +59,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111480282640649
+  lastModified: 638111486789223018
   FileSizes:
   - Name: Desktop
     Value: 754
@@ -76,18 +76,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/Shoot
   m_EditorClassIdentifier: 
-  Path: event:/Shoot
-  Guid:
-    Data1: 1392193571
-    Data2: 1240840706
-    Data3: -2146009185
-    Data4: 1908270210
-  Banks:
-  - {fileID: -3390860823888591601}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 277
+  Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638111486789213022
+  FileSizes:
+  - Name: Desktop
+    Value: 6464
+  Exists: 1
