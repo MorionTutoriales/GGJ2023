@@ -33,6 +33,9 @@
 		<relationship name="timeline">
 			<destination>{032f7c6b-acc7-4ae6-a35f-86e5e6d483d2}</destination>
 		</relationship>
+		<relationship name="parameters">
+			<destination>{68d83397-4bed-4d9a-98bb-e701c108eba6}</destination>
+		</relationship>
 		<relationship name="banks">
 			<destination>{5bad2d99-89ff-4f20-b9db-311eb6a22a14}</destination>
 		</relationship>
@@ -43,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{691f3352-41d5-4d6c-a922-3e3b4c646157}">
+		<relationship name="automationTracks">
+			<destination>{4c15aaf5-4949-4d8e-bd36-88d3a862060f}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{faf681e4-3caa-45e0-b988-23c490d63761}</destination>
 		</relationship>
@@ -95,10 +101,18 @@
 			<destination>{66c31f1c-c1bd-478e-8316-bda8e1248ebb}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterProxy" id="{68d83397-4bed-4d9a-98bb-e701c108eba6}">
+		<relationship name="preset">
+			<destination>{ce385d19-bdcf-4d3f-9d00-32bbc8838bcc}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{faf681e4-3caa-45e0-b988-23c490d63761}">
 		<property name="volume">
 			<value>-10</value>
 		</property>
+		<relationship name="automators">
+			<destination>{9729b74b-dd0b-45b4-bd36-b8a7652c34a1}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{6816a59a-bf2b-4365-86df-046d2f268586}</destination>
 		</relationship>
@@ -107,6 +121,11 @@
 		</relationship>
 		<relationship name="mixer">
 			<destination>{6e4a3325-c83a-40c1-b1f0-c1c5bdd4f4ad}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationTrack" id="{4c15aaf5-4949-4d8e-bd36-88d3a862060f}">
+		<relationship name="automator">
+			<destination>{9729b74b-dd0b-45b4-bd36-b8a7652c34a1}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{d267f011-2982-43cf-8f02-0c7593bb0998}">
@@ -190,7 +209,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{8de00f14-26e9-4666-914f-10eec1239c89}">
 		<property name="volume">
-			<value>-5.5</value>
+			<value>-1</value>
 		</property>
 		<property name="name">
 			<value>Audio 3</value>
@@ -203,6 +222,14 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{faf681e4-3caa-45e0-b988-23c490d63761}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{9729b74b-dd0b-45b4-bd36-b8a7652c34a1}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{8d42be45-f40d-42b3-9aea-a0362901f5c2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{6816a59a-bf2b-4365-86df-046d2f268586}">
@@ -321,6 +348,15 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5d7a9025-10b0-47d9-ba71-ada2c3056f73}" />
+	<object class="AutomationCurve" id="{8d42be45-f40d-42b3-9aea-a0362901f5c2}">
+		<relationship name="parameter">
+			<destination>{ce385d19-bdcf-4d3f-9d00-32bbc8838bcc}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{424c49bc-315c-4923-8b7e-8e33764401cb}</destination>
+			<destination>{8189d2f4-20c8-4573-bbe3-80ece40ded5b}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{14caa88d-5f8f-45d5-9af1-e956051738f9}" />
 	<object class="AutomationPoint" id="{0235e0bc-e8f1-4c3d-9b97-1a555d4c5d93}">
 		<property name="position">
@@ -363,4 +399,20 @@
 	</object>
 	<object class="MixerBusFader" id="{95ab007f-49e0-4097-afb6-d32239a9ecaf}" />
 	<object class="MixerBusFader" id="{92092ed6-a1df-4031-86d6-1ebfa9e4ec96}" />
+	<object class="AutomationPoint" id="{424c49bc-315c-4923-8b7e-8e33764401cb}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{8189d2f4-20c8-4573-bbe3-80ece40ded5b}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>-17</value>
+		</property>
+	</object>
 </objects>
