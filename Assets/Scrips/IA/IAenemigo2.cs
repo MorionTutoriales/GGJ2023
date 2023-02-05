@@ -74,7 +74,8 @@ public class IAenemigo2 : MonoBehaviour
     }
     void EstadoAtacando()
     {
-        print("Atacando");
+        Vector3 dir = ((personaje.position + desfase) - transform.position).normalized;
+        pos = pos + dir * velocidad * Time.deltaTime;
         transform.position = pos + Vector3.up * Mathf.Sin(Time.time * frecuencia) * amplitud;
 
         //////// transiciones  ///////

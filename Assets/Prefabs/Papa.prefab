@@ -4894,6 +4894,9 @@ MonoBehaviour:
   objetos:
   - {fileID: 4851849120941640038}
   - {fileID: 469176510236891686}
+  particulasExplo: {fileID: 5112403345868107898, guid: 6f34ef0d986e9db4199cf75805f79753,
+    type: 3}
+  "da\xF1o": 3
 --- !u!1001 &739628678265022327
 PrefabInstance:
   m_ObjectHideFlags: 0
