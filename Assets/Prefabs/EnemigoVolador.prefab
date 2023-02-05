@@ -357,11 +357,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f21d94364becb2489ff5999763419be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  estado: 0
+  estado: 1
   personaje: {fileID: 0}
   velocidad: 3
   vida: 100
-  desfase: {x: 0, y: 1, z: 0}
+  desfase: {x: 0, y: 0.5, z: 0}
   amplitud: 0.4
   frecuencia: 3
   particulas: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312,

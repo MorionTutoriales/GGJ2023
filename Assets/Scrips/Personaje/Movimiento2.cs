@@ -13,6 +13,8 @@ public class Movimiento2 : MonoBehaviour
     public float frecuenciaDisparo;
     float ultimoDisparo;
     public float btnDisparar;
+    public Transform posDisparo;
+    public GameObject particulasDisparo;
 
     Vector3 posAnterior;
     public InputActionProperty prCarga;
@@ -24,9 +26,13 @@ public class Movimiento2 : MonoBehaviour
     public float cargaActual = 0;
     float tiempoUltimoTrigger;
 
-    void Start()
-    {
+	private void Awake()
+	{
         singleton = this;
+    }
+
+	void Start()
+    {
         prDisparo.action.Enable();
         prCarga.action.Enable();
     }
@@ -38,6 +44,7 @@ public class Movimiento2 : MonoBehaviour
 		{
             ultimoDisparo = Time.time + frecuenciaDisparo;
             animaciones.SetTrigger("Shoot");
+            Invoke("InstanciarParticulas", 0.2f);
 		}
 		if (velocidad < 0.1f && enZonaMunicion)
 		{
@@ -52,10 +59,14 @@ public class Movimiento2 : MonoBehaviour
                     tiempoUltimoTrigger = Time.time + 5;
                 }
                 Invoke("DesCargar", 2);
-
             }
 
 		}
+    }
+
+    public void InstanciarParticulas()
+	{
+        (Instantiate(particulasDisparo, posDisparo.position, posDisparo.rotation) as GameObject).transform.parent = posDisparo.transform;
     }
 
     public void DesCargar()
