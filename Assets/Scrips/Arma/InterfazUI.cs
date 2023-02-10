@@ -33,7 +33,7 @@ public class InterfazUI : MonoBehaviour
     {
         cantProyectiles += cuanto;
 
-        if (cantProyectiles < cantTotalProyectiles)
+        if (cantProyectiles > cantTotalProyectiles)
         {
             cantProyectiles = cantTotalProyectiles;
         }

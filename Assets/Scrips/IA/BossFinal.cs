@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossFinal : MonoBehaviour
 {
@@ -18,10 +19,15 @@ public class BossFinal : MonoBehaviour
 	public float vidaActual;
 	public float vidaInicial = 100;
 	bool activo;
-
+	public BarraDeVida barraVida;
 	private void Awake()
 	{
 		singleton = this;
+	}
+
+	public void CargarMenu()
+	{
+		SceneManager.LoadScene("Niveles");
 	}
 
 	// Start is called before the first frame update
@@ -63,6 +69,7 @@ public class BossFinal : MonoBehaviour
 	public void QuitarVida(float cuanto)
 	{
 		vidaActual -= cuanto;
+		barraVida.vidaActual = vidaActual;
 		if (vidaActual<=0)
 		{
 			Morir();
@@ -71,7 +78,10 @@ public class BossFinal : MonoBehaviour
 
 	void Morir()
 	{
-		Destroy(gameObject);
+		animaciones.SetBool("vivo", false);
+		//Destroy(gameObject.GetComponent<Collider>());
+		Destroy(this);
+		Invoke("CargarMenu", 10);
 	}
 
 	private void OnDrawGizmosSelected()
