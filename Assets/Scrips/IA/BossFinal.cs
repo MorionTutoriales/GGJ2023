@@ -20,6 +20,7 @@ public class BossFinal : MonoBehaviour
 	public float vidaInicial = 100;
 	bool activo;
 	public BarraDeVida barraVida;
+	public bool atacando;
 	private void Awake()
 	{
 		singleton = this;
@@ -51,7 +52,7 @@ public class BossFinal : MonoBehaviour
 		{
 			yield return new WaitForSeconds(Random.Range(tiemposAtacar.x, tiemposAtacar.y));
 			
-			if ((transform.position-jugador.position).magnitude < distanciaPeligrosa)
+			if (atacando)
 			{
 				for (int i = 0; i < 40; i++)
 				{
@@ -65,6 +66,12 @@ public class BossFinal : MonoBehaviour
 			}
 		}
     }
+
+	private void FixedUpdate()
+	{
+		atacando = (transform.position - jugador.position).magnitude < distanciaPeligrosa;
+		FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Batalla", atacando?1:0);
+	}
 
 	public void QuitarVida(float cuanto)
 	{
