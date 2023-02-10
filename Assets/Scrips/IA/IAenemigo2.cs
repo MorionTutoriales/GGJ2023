@@ -13,11 +13,13 @@ public class IAenemigo2 : MonoBehaviour
     private Vector3 pos;
     public float frecuencia;
     public GameObject particulas;
+    public float sensibilidadBalas = 2;
 
     void Start()
     {
         pos = transform.position;
         personaje = Movimiento2.singleton.gameObject.transform;
+        InvokeRepeating("DetectarBalas", 1, 0.6f);
     }
 
     void Update()
@@ -74,7 +76,8 @@ public class IAenemigo2 : MonoBehaviour
     }
     void EstadoAtacando()
     {
-        print("Atacando");
+        Vector3 dir = ((personaje.position + desfase) - transform.position).normalized;
+        pos = pos + dir * velocidad * Time.deltaTime;
         transform.position = pos + Vector3.up * Mathf.Sin(Time.time * frecuencia) * amplitud;
 
         //////// transiciones  ///////
@@ -101,13 +104,37 @@ public class IAenemigo2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Morir();
+    }
+
+    public void Morir()
+	{
         Destroy(gameObject);
 
         if (particulas != null)
         {
             GameObject effect = Instantiate(particulas);
             effect.transform.position = transform.position;
-            
+
         }
     }
+
+    void DetectarBalas()
+	{
+        Collider[] cols = Physics.OverlapSphere(transform.position, sensibilidadBalas);
+		for (int i = 0; i < cols.Length; i++)
+		{
+			if (cols[i].CompareTag("Municion"))
+			{
+                Morir();
+                Destroy(cols[i].gameObject);
+			}
+		}
+	}
+
+	private void OnDrawGizmos()
+	{
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, sensibilidadBalas);
+	}
 }

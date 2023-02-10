@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Movimiento2 : MonoBehaviour
 {
@@ -30,6 +31,27 @@ public class Movimiento2 : MonoBehaviour
     public float velocidadCarga = 0.5f;
     public float cargaActual = 0;
     float tiempoUltimoTrigger;
+    public bool yaSono = false;
+
+    public int cuantoRecarga = 10;
+    public BarraDeVida barraVida;
+
+    public void CargarMenu()
+    {
+        SceneManager.LoadScene("Niveles");
+    }
+    public void Morir()
+	{
+        print("MUERTO");
+        controlPrincipal.enabled = false;
+        Invoke("CargarMenu", 10);
+        animaciones.SetBool("vivo", false);
+        enabled = false;
+	}
+    public void CausarDaño(float d)
+	{
+        barraVida.vidaActual -= d;
+	}
 
 	private void Awake()
 	{
@@ -52,10 +74,11 @@ public class Movimiento2 : MonoBehaviour
             eventoSaltar.Invoke();
         }
 
-        if (prDisparo.action.ReadValue<float>() > 0 && Time.time > ultimoDisparo && pCarga<0.1f)
+        if (InterfazUI.singleton.cantProyectiles > 0 && prDisparo.action.ReadValue<float>() > 0 && Time.time > ultimoDisparo && pCarga<0.1f)
 		{
             ultimoDisparo = Time.time + frecuenciaDisparo;
             animaciones.SetTrigger("Shoot");
+            InterfazUI.singleton.Disparar();
             Instantiate(bala, posDisparo.position, posDisparo.rotation);
             Invoke("InstanciarParticulas", 0.2f);
 		}
@@ -65,11 +88,20 @@ public class Movimiento2 : MonoBehaviour
             controlPrincipal.enabled = (!(pCarga > 0));
             if ((pCarga > 0)) {
                 cargaActual += (velocidadCarga/5f) * Time.deltaTime;
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
+				if (!yaSono)
+				{
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/ArracachaMan/cargacosechando");
+                    yaSono = true;
+                }
             }
-            if (pCarga < 0.1f) cargaActual = 0;
+            if (pCarga < 0.1f) {
+                cargaActual = 0;
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
+                yaSono = false;
+            }
 			if (Municion.objetoActivo != null)
 			{
-                Municion.objetoActivo.imagenCarga.transform.LookAt(Camera.main.transform);
                 Municion.objetoActivo.imagenCarga.fillAmount = cargaActual;
 			}
 			if (cargaActual >= 1)
@@ -96,7 +128,10 @@ public class Movimiento2 : MonoBehaviour
         enZonaMunicion = false;
         pCarga = 0;
         cargaActual = 0;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("cosechando", cargaActual);
+        yaSono = false;
         controlPrincipal.enabled = true;
+        InterfazUI.singleton.Recargar(cuantoRecarga);
 	}
 
 	// Update is called once per frame

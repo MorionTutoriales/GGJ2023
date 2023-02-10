@@ -8,8 +8,13 @@ public class IAenemigo1 : MonoBehaviour
     public Transform personaje;
     public float velocidad = 3f;
     public float vida = 100f;
+    public Animator anim;
 
-    void Update()
+	private void Start()
+	{
+        personaje = Movimiento2.singleton.gameObject.transform;
+    }
+	void Update()
     {
         switch (estado)
         {
@@ -47,6 +52,7 @@ public class IAenemigo1 : MonoBehaviour
     void EstadoSeguir()
     {
         transform.LookAt(personaje);
+        transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
         transform.Translate(0, 0, velocidad * Time.deltaTime);
 
         //////// transiciones  ///////
@@ -63,6 +69,7 @@ public class IAenemigo1 : MonoBehaviour
     void EstadoAtacando()
     {
         print("Atacando");
+        anim.SetBool("Ataque", true);
 
         //////// transiciones  ///////
         if ((personaje.position - transform.position).magnitude > 3)
@@ -78,14 +85,13 @@ public class IAenemigo1 : MonoBehaviour
     }
     void EstadoMuerte()
     {
-
+        anim.SetBool("Muerto", true);
     }
 
     public void CambiarEstado(Estados nuevoEstado)
     {
         estado = nuevoEstado;
     }
-
 }
 
 public enum Estados

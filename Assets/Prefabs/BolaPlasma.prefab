@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 4645514116365672180}
   - component: {fileID: 842818193235566609}
   - component: {fileID: 5112836910636608461}
+  - component: {fileID: 3032527792324580954}
   m_Layer: 0
   m_Name: BolaPlasma
   m_TagString: Untagged
@@ -254,3 +255,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 8
+  particulas: {fileID: 2433282508537954060, guid: 38eda3b07172dda4295c66ea2188a80d,
+    type: 3}
+  "da\xF1o": 30
+--- !u!135 &3032527792324580954
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4859075966639770512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.72
+  m_Center: {x: 0, y: 0, z: 0}

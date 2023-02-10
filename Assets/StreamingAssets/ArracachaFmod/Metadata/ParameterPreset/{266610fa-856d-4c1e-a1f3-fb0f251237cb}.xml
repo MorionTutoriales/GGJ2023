@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{266610fa-856d-4c1e-a1f3-fb0f251237cb}">
+		<property name="name">
+			<value>Batalla</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ef2fd833-eded-4af4-9737-d8e9d0db911d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{35267b23-e2f8-49a2-a74b-28f8fc363120}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{35267b23-e2f8-49a2-a74b-28f8fc363120}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.41999998688697815</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
