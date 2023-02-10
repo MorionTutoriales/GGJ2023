@@ -100,6 +100,34 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-7020943261566020643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ArracachaMan/Voz
+  m_EditorClassIdentifier: 
+  Path: event:/ArracachaMan/Voz
+  Guid:
+    Data1: 885575882
+    Data2: 1262927369
+    Data3: 1943319996
+    Data4: -1289207229
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3395499209100420921}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 934
 --- !u!114 &-6641412591397627077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,10 +190,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638116369097441757
+  lastModified: 638116405538081200
   FileSizes:
   - Name: Desktop
-    Value: 1312
+    Value: 1346
   Exists: 1
 --- !u!114 &-5751193415881056225
 MonoBehaviour:
@@ -270,7 +298,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2179
+  Length: 4048
 --- !u!114 &-2651035590714691249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,6 +399,7 @@ MonoBehaviour:
   - {fileID: 5821865327851958863}
   - {fileID: -7865918052181460413}
   - {fileID: 4990461982864628586}
+  - {fileID: -7020943261566020643}
   EditorParameters:
   - {fileID: 2485706844285538112}
   - {fileID: -4744450485221797986}
@@ -381,7 +410,7 @@ MonoBehaviour:
   - {fileID: 9190191681223250799}
   StringsBanks:
   - {fileID: -6147435469291570980}
-  cacheTime: 638116369097711747
+  cacheTime: 638116405538081200
   cacheVersion: 131601
 --- !u!114 &180241468755613959
 MonoBehaviour:
@@ -561,6 +590,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4387
+--- !u!114 &3395499209100420921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Voz/salto y disparo
+  m_EditorClassIdentifier: 
+  Name: salto y disparo
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 966919438
+    data2: 3010765258
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &3914331086879559839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,8 +1061,8 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638116369097711747
+  lastModified: 638116405538051185
   FileSizes:
   - Name: Desktop
-    Value: 2666496
+    Value: 2668320
   Exists: 1

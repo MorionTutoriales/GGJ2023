@@ -188,15 +188,15 @@
 		<property name="length">
 			<value>0.11900226757369614</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{7a7fad09-1151-4893-89c4-82b3bd260f1e}</destination>
+		</relationship>
 		<relationship name="sounds">
 			<destination>{f0610e5f-7b34-461d-b1aa-3994c7e6292a}</destination>
 			<destination>{c5de071f-5e7b-482b-bdd4-420a54285583}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{c5915ea8-7d2e-4a0c-b149-60a839d82ffe}">
-		<property name="volume">
-			<value>-1</value>
-		</property>
 		<property name="name">
 			<value>Audio 3</value>
 		</property>
@@ -310,6 +310,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8fb5b871-e306-4247-bffa-81cfde5b8d5d}" />
+	<object class="RandomizerModulator" id="{7a7fad09-1151-4893-89c4-82b3bd260f1e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>1.5</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{f0610e5f-7b34-461d-b1aa-3994c7e6292a}">
 		<relationship name="audioFile">
 			<destination>{bba6d612-4532-4d16-aa00-667032d49d34}</destination>
@@ -322,6 +330,7 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{6b8a7af2-4704-4a68-940a-26ae9eca8ced}">
 		<relationship name="effects">
+			<destination>{a65b023b-d764-4b10-8a83-abcbf566cc6b}</destination>
 			<destination>{7ff84e15-6140-4766-a1c7-f97fbca01b73}</destination>
 		</relationship>
 	</object>
@@ -367,5 +376,19 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{0acab0c0-e235-4591-ab14-a2c947ba806b}" />
+	<object class="CompressorEffect" id="{a65b023b-d764-4b10-8a83-abcbf566cc6b}">
+		<property name="threshold">
+			<value>-34.5</value>
+		</property>
+		<property name="attackTime">
+			<value>12</value>
+		</property>
+		<property name="releaseTime">
+			<value>62</value>
+		</property>
+		<property name="gain">
+			<value>13.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{7ff84e15-6140-4766-a1c7-f97fbca01b73}" />
 </objects>
