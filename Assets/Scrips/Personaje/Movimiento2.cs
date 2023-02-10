@@ -58,6 +58,8 @@ public class Movimiento2 : MonoBehaviour
         singleton = this;
     }
 
+
+
 	void Start()
     {
         prDisparo.action.Enable();
@@ -67,8 +69,9 @@ public class Movimiento2 : MonoBehaviour
 	private void Update()
 	{
         btnDisparar = prDisparo.action.ReadValue<float>();
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Vida", barraVida.vidaActual/barraVida.vidaMaxima);
 
-		if (prSalto.action.ReadValue<float>() > 0 && Time.time > ultimoSalto)
+        if (prSalto.action.ReadValue<float>() > 0 && Time.time > ultimoSalto)
 		{
             ultimoSalto = Time.time + 1;
             eventoSaltar.Invoke();
