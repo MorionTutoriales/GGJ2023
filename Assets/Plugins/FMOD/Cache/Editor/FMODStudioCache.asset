@@ -190,7 +190,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638116497678132246
+  lastModified: 638116440697700260
   FileSizes:
   - Name: Desktop
     Value: 1388
@@ -434,7 +434,7 @@ MonoBehaviour:
   - {fileID: 9190191681223250799}
   StringsBanks:
   - {fileID: -6147435469291570980}
-  cacheTime: 638116497678132246
+  cacheTime: 638116440697810369
   cacheVersion: 131601
 --- !u!114 &180241468755613959
 MonoBehaviour:
@@ -1089,7 +1089,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638116497678102233
+  lastModified: 638116440697810369
   FileSizes:
   - Name: Desktop
     Value: 3139104
