@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9205583649618176214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemigos/DisparoPlasma
+  m_EditorClassIdentifier: 
+  Path: event:/Enemigos/DisparoPlasma
+  Guid:
+    Data1: -1974467480
+    Data2: 1093604293
+    Data3: 1494436002
+    Data4: 791001747
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 5.2000003
+  MaxDistance: 75
+  Length: 2634
 --- !u!114 &-8977287415550474361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,30 +103,6 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-7231088557350715647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MX/Vida
-  m_EditorClassIdentifier: 
-  Name: Vida
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2242727917
-    data2: 223186877
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &-7020943261566020643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +152,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 9190191681223250799}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -190,10 +193,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638116440697700260
+  lastModified: 638121825693710845
   FileSizes:
   - Name: Desktop
-    Value: 1388
+    Value: 1776
   Exists: 1
 --- !u!114 &-6058337029311008235
 MonoBehaviour:
@@ -251,33 +254,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1300
---- !u!114 &-5734065910276589375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BichoVolador
-  m_EditorClassIdentifier: 
-  Path: event:/BichoVolador
-  Guid:
-    Data1: -648341791
-    Data2: 1289200138
-    Data3: -498437227
-    Data4: 1745385209
-  Banks:
-  - {fileID: 9190191681223250799}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 36754
 --- !u!114 &-4744450485221797986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,6 +326,62 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-3391694282572894480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musica/MX
+  m_EditorClassIdentifier: 
+  Path: event:/Musica/MX
+  Guid:
+    Data1: -1418765551
+    Data2: 1286478049
+    Data3: -1994532443
+    Data4: 1101724057
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2679359770849673786}
+  - {fileID: 2027642521724256481}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 44294
+--- !u!114 &-2812997905815489902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemigos/Plasma
+  m_EditorClassIdentifier: 
+  Path: event:/Enemigos/Plasma
+  Guid:
+    Data1: -875675184
+    Data2: 1172429194
+    Data3: 2019722881
+    Data4: 75812025
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 5.2000003
+  MaxDistance: 75
+  Length: 1250
 --- !u!114 &-2651035590714691249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,6 +430,89 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-1533188055454161548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemigos/GusanoSalida
+  m_EditorClassIdentifier: 
+  Path: event:/Enemigos/GusanoSalida
+  Guid:
+    Data1: 906600395
+    Data2: 1195687868
+    Data3: 830044580
+    Data4: 1778046622
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4700
+--- !u!114 &-432487069519786888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musica/MX old
+  m_EditorClassIdentifier: 
+  Path: event:/Musica/MX old
+  Guid:
+    Data1: 1457931909
+    Data2: 1244904544
+    Data3: -1704814434
+    Data4: 952987775
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8094214956104911386}
+  - {fileID: 2033398269820433815}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 137384
+--- !u!114 &-95836666992231498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Explosion
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Explosion
+  Guid:
+    Data1: 1036721771
+    Data2: 1262222392
+    Data3: -995579225
+    Data4: 510243019
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5879
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,11 +534,19 @@ MonoBehaviour:
   - {fileID: 8123168013618537845}
   - {fileID: 5821865327851958863}
   - {fileID: -7865918052181460413}
-  - {fileID: 4990461982864628586}
   - {fileID: -7020943261566020643}
   - {fileID: 8842060191568410976}
   - {fileID: -6058337029311008235}
-  - {fileID: -5734065910276589375}
+  - {fileID: -3391694282572894480}
+  - {fileID: -95836666992231498}
+  - {fileID: -432487069519786888}
+  - {fileID: 8660617232303770508}
+  - {fileID: 7060451251415363992}
+  - {fileID: -1533188055454161548}
+  - {fileID: -2812997905815489902}
+  - {fileID: 1337085648621693753}
+  - {fileID: -9205583649618176214}
+  - {fileID: 5319428995929997601}
   EditorParameters:
   - {fileID: 2485706844285538112}
   - {fileID: -4744450485221797986}
@@ -434,7 +557,7 @@ MonoBehaviour:
   - {fileID: 9190191681223250799}
   StringsBanks:
   - {fileID: -6147435469291570980}
-  cacheTime: 638116440697810369
+  cacheTime: 638121825693710845
   cacheVersion: 131601
 --- !u!114 &180241468755613959
 MonoBehaviour:
@@ -487,6 +610,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &1337085648621693753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemigos/EnemigoVolador
+  m_EditorClassIdentifier: 
+  Path: event:/Enemigos/EnemigoVolador
+  Guid:
+    Data1: -648341791
+    Data2: 1289200138
+    Data3: -498437227
+    Data4: 1745385209
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 36754
 --- !u!114 &1349495960721103351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,6 +661,54 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &2027642521724256481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MX/Vida
+  m_EditorClassIdentifier: 
+  Name: Vida
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2242727917
+    data2: 223186877
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2033398269820433815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MX old/Batalla
+  m_EditorClassIdentifier: 
+  Name: Batalla
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 218670206
+    data2: 4142356491
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &2485706844285538112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,6 +729,30 @@ MonoBehaviour:
   ID:
     data1: 506439124
     data2: 2050337737
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2679359770849673786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MX/Batalla
+  m_EditorClassIdentifier: 
+  Name: Batalla
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 218670206
+    data2: 4142356491
   Type: 0
   IsGlobal: 1
   Labels: []
@@ -610,30 +832,6 @@ MonoBehaviour:
   ID:
     data1: 966919438
     data2: 3010765258
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &3914331086879559839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MX/Batalla
-  m_EditorClassIdentifier: 
-  Name: Batalla
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 218670206
-    data2: 4142356491
   Type: 0
   IsGlobal: 1
   Labels: []
@@ -738,7 +936,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &4990461982864628586
+--- !u!114 &5319428995929997601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -748,25 +946,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MX
+  m_Name: event:/Enemigos/EnemigoPersigue Ataque
   m_EditorClassIdentifier: 
-  Path: event:/MX
+  Path: event:/Enemigos/EnemigoPersigue Ataque
   Guid:
-    Data1: 1457931909
-    Data2: 1244904544
-    Data3: -1704814434
-    Data4: 952987775
+    Data1: 624595940
+    Data2: 1141453494
+    Data3: -612773709
+    Data4: -516858265
   Banks:
   - {fileID: 9190191681223250799}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7231088557350715647}
-  - {fileID: 3914331086879559839}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 59076
+  Length: 2655
 --- !u!114 &5450247416025260533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,6 +1095,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 634
+--- !u!114 &7060451251415363992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemigos/Creatura Grito
+  m_EditorClassIdentifier: 
+  Path: event:/Enemigos/Creatura Grito
+  Guid:
+    Data1: 793888956
+    Data2: 1176856318
+    Data3: -1922645851
+    Data4: -896788466
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3530
 --- !u!114 &8017858768686954081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,7 +1138,7 @@ MonoBehaviour:
   StudioPath: parameter:/Vida
   Min: 0
   Max: 1
-  Default: 0
+  Default: 1
   ID:
     data1: 2242727917
     data2: 223186877
@@ -942,6 +1165,30 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 640960
+  Exists: 1
+--- !u!114 &8094214956104911386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MX old/Vida
+  m_EditorClassIdentifier: 
+  Name: Vida
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2242727917
+    data2: 223186877
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &8123168013618537845
 MonoBehaviour:
@@ -995,6 +1242,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &8660617232303770508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemigos/EnemigoPersigue
+  m_EditorClassIdentifier: 
+  Path: event:/Enemigos/EnemigoPersigue
+  Guid:
+    Data1: 155238277
+    Data2: 1179642913
+    Data3: 1890869422
+    Data4: 1502417734
+  Banks:
+  - {fileID: 9190191681223250799}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5600
 --- !u!114 &8842060191568410976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1089,8 +1363,8 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/ArracachaFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638116440697810369
+  lastModified: 638121825693670836
   FileSizes:
   - Name: Desktop
-    Value: 3139104
+    Value: 4805408
   Exists: 1

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{54d95029-f9e0-41ad-92b4-903583e71422}">
+		<property name="assetPath">
+			<value>AnimalCreature 6039_41_3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.0053333333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{324137d3-d4db-4b97-b4b8-470a6f58627e}</destination>
+		</relationship>
+	</object>
+</objects>

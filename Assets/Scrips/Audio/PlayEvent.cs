@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayEvent : MonoBehaviour
 {
-    private FMOD.Studio.EventInstance instance;
+    public FMOD.Studio.EventInstance instance;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +22,7 @@ public class PlayEvent : MonoBehaviour
         instance = FMODUnity.RuntimeManager.CreateInstance(evento);
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
         instance.start();
+        
     }
+
 }

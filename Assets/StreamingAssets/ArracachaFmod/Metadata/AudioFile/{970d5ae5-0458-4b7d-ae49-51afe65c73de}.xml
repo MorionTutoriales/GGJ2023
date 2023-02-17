@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{970d5ae5-0458-4b7d-ae49-51afe65c73de}">
+		<property name="assetPath">
+			<value>SciFiCreature 6108_28_1 - Trimmed.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.3403125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{324137d3-d4db-4b97-b4b8-470a6f58627e}</destination>
+		</relationship>
+	</object>
+</objects>

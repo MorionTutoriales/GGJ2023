@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6534bf69-b0a3-472f-ab1d-255a392cf658}">
+		<property name="assetPath">
+			<value>SciFiCreature 6098_72.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>20.629333333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{324137d3-d4db-4b97-b4b8-470a6f58627e}</destination>
+		</relationship>
+	</object>
+</objects>

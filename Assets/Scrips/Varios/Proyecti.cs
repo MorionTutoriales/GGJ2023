@@ -10,6 +10,7 @@ public class Proyecti : MonoBehaviour
     public GameObject[] objetos;
     public GameObject particulasExplo;
     public float daño = 10;
+    public string SonidoImpacto = "event:/FX/Explosion";
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class Proyecti : MonoBehaviour
 	{
 		if (collision.collider.CompareTag("Gusano"))
 		{
+            FMODUnity.RuntimeManager.PlayOneShot("event:/FX/Explosion");
             Instantiate(particulasExplo, transform.position, transform.rotation);
             BossFinal.singleton.QuitarVida(daño);
             Destroy(gameObject);

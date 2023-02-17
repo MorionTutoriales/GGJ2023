@@ -272,6 +272,8 @@ GameObject:
   - component: {fileID: 3421112393903238766}
   - component: {fileID: 3421112393903238762}
   - component: {fileID: 3421112393903238767}
+  - component: {fileID: 3443992787676363416}
+  - component: {fileID: 6349410054251293247}
   m_Layer: 0
   m_Name: EnemigoVolador
   m_TagString: Untagged
@@ -381,6 +383,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cantidad: 10
   "tiempoDa\xF1o": 0.25
+--- !u!114 &3443992787676363416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2574742086446572722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -648341791
+      Data2: 1289200138
+      Data3: -498437227
+      Data4: 1745385209
+    Path: event:/Enemigos/EnemigoVolador
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &6349410054251293247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2574742086446572722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1036721771
+      Data2: 1262222392
+      Data3: -995579225
+      Data4: 510243019
+    Path: event:/FX/Explosion
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2734919613777702495
 GameObject:
   m_ObjectHideFlags: 0

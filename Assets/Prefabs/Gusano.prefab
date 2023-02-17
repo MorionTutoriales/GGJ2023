@@ -88,6 +88,7 @@ MonoBehaviour:
   vidaActual: 50
   vidaInicial: 50
   barraVida: {fileID: 736429818582179273}
+  atacando: 0
 --- !u!114 &736429818582179273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,6 +600,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5482227880535146185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502497521029848726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05187bccd1b532d40a86a3964612cf81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &792909827452462705 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -9135366791809546826, guid: adeb2261cba274940ba5dd6cd4788658,
